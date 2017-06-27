@@ -6,13 +6,9 @@ $darkred: #ac000b;
 $red: #d4000f;
 $white: #fff;
 
-@font-face {
-    font-family: InterstateBold;
-    src: url(../fonts/Interstate-Bold.ttf);
-}
 
 @font-face {
-  font-family: InterstateRegular;
+  font-family: InterReg;
   src: url(../fonts/Interstate-Regular.ttf);
 }
 
@@ -34,7 +30,7 @@ $white: #fff;
   margin: 0;
   padding: 0;
   border: none;
-  font-family: InterstateRegular, Helvetica, sans-serif;
+  font-family: Interstate-Regular, Helvetica, sans-serif;
   list-style: none;
   box-sizing: border-box;
 }
@@ -43,36 +39,41 @@ $white: #fff;
   margin: 0 5vw;
 }
 
+.container {
+  margin: 3vh 0;
+}
+
 .header {
   @include componentPadding;
   height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 3vh;
 
-  .logotype {
-    width: 100%;
-    max-width: 180px;
-    max-height: 100px;
+  .lg {
+    @include componentPadding;
     flex: 1;
+    img {
+      max-height: 125px;
+      max-width: 200px;
+    }
   }
 
   .navbar {
     @include componentPadding;
-    width: 100%;
     color: black;
-    @include redBorder;
-    flex: 1;
+    flex: 2;
+
 
     .nav {
-      @include flexCenter;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
       ul {
         display: inline-flex;
         align-items: center;
         justify-content: space-around;
         list-style: none;
-        text-align: center;
         width: 80%;
         height: 10vh;
 
@@ -96,29 +97,72 @@ $white: #fff;
 
 }
 
-.butikBild {
-  width: 100%;
+.butik {
+  width: 90vw;
   height: 400px;
-  @include redBorder;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-weight: normal;
+    font-size: 2rem;
+    padding-left: 5vw;
+    color: $darkred;
+  }
+  h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    padding-left: 5vw;
+  }
 }
-
-.center { @include flexCenter; }
-
 
 .info {
   @include componentPadding;
   width: 100%;
   height: 100%;
-  @include redBorder;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 
   .card {
-    border: 1px solid blue;
-    width: 450px;
-    height: 500px;
+    width: 350px;
+    height: 400px;
     margin-bottom: 3vh;
+    @include flexCenter;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    h1 {
+      font-family: Helvetica;
+      font-weight: normal;
+      color: $white;
+      background: rgba($darkblue, 0.6);
+      padding: 10px 30px;
+      width: 100%;
+    }
+
+    p {
+      font-family: Helvetica;
+      color: $white;
+      background: rgba($darkblue, 0.6);
+      padding: 10px 30px;
+      line-height: 1.3;
+      font-weight: lighter;
+      width: 100%;
+    }
+  }
+
+  .backlunda {
+    background-image: url("http://www.backlunda.se/media/1006/vit_matt_miljo.jpg");
+  }
+  .creoform {
+    background-image: url("http://creoform.se/Files/Billeder/inspirationspuff/2016/Creoform%20Exclusive_Carat_Ljusgr%C3%A5_2.jpg");
+    }
+  .vitvaror {
+    background-image: url("https://roomly.se/gamla-content/uploads/2015/01/bildlista-14216762088gn4k.jpg");
   }
 }
 
@@ -128,12 +172,14 @@ $white: #fff;
   width: 100%;
   height: 100%;
   flex-direction: column;
+  background: $ltblue;
+  color: white;
+  margin-bottom: 3vh;
 
-  .illustration {
-    height: 300px;
-    width: 100%;
-    @include redBorder;
+  h2 {
+    font-weight: normal;
   }
+
 }
 
 .utbud {
@@ -141,7 +187,6 @@ $white: #fff;
   width: 100%;
   height: 100%;
   display: flex;
-  @include redBorder;
 
   .produkt {
     @include flexCenter;
