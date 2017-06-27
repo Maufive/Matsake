@@ -1,0 +1,176 @@
+$darkblue: #004585;
+$blue: #0056a7;
+$ltblue: #729ed7;
+$yellow: #ffe000;
+$darkred: #ac000b;
+$red: #d4000f;
+$white: #fff;
+
+@font-face {
+    font-family: InterstateBold;
+    src: url(../fonts/Interstate-Bold.ttf);
+}
+
+@font-face {
+  font-family: InterstateRegular;
+  src: url(../fonts/Interstate-Regular.ttf);
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin componentPadding {
+  padding: 3vh 0;
+}
+
+@mixin  redBorder {
+  border: 1px solid red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: InterstateRegular, Helvetica, sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.page {
+  margin: 0 5vw;
+}
+
+.header {
+  @include componentPadding;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3vh;
+
+  .logotype {
+    width: 100%;
+    max-width: 180px;
+    max-height: 100px;
+    flex: 1;
+  }
+
+  .navbar {
+    @include componentPadding;
+    width: 100%;
+    color: black;
+    @include redBorder;
+    flex: 1;
+
+    .nav {
+      @include flexCenter;
+      ul {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        text-align: center;
+        width: 80%;
+        height: 10vh;
+
+        li {
+          transition: all 0.3s;
+          font-size: 1.5rem;
+          padding: 5px 10px;
+          color: $blue;
+        }
+
+        li:hover {
+          background: $white;
+          color: $ltblue;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+
+}
+
+.butikBild {
+  width: 100%;
+  height: 400px;
+  @include redBorder;
+}
+
+.center { @include flexCenter; }
+
+
+.info {
+  @include componentPadding;
+  width: 100%;
+  height: 100%;
+  @include redBorder;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .card {
+    border: 1px solid blue;
+    width: 450px;
+    height: 500px;
+    margin-bottom: 3vh;
+  }
+}
+
+.hitta-hit {
+  @include componentPadding;
+  @include flexCenter;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+
+  .illustration {
+    height: 300px;
+    width: 100%;
+    @include redBorder;
+  }
+}
+
+.utbud {
+  @include componentPadding;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  @include redBorder;
+
+  .produkt {
+    @include flexCenter;
+    flex-direction: column;
+    color: $red;
+    padding: 10px;
+
+    .thumbnail {
+      width: 100%;
+      height: 300px;
+
+    }
+  }
+}
+
+.footer {
+  @include componentPadding;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  height: 50vh;
+  width: 100%;
+  @include flexCenter;
+
+  .kontakt {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .kontakt ul { list-style: none; }
+}
