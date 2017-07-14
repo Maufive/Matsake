@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@media only screen and (max-width: 800px) {
+  .header {
+    margin: 0;
+    padding: 20px 10px; }
+    .header .navbar .nav ul li {
+      font-size: 1.3rem; }
+
+  .butik {
+    height: 350px;
+    padding-left: 0;
+    margin-bottom: 3vh; }
+    .butik h1 {
+      font-size: 1.6rem; }
+    .butik h3 {
+      font-size: 1.3rem; }
+
+  .intro {
+    padding: 0;
+    height: 30vh; }
+
+  .info {
+    padding: 0;
+    justify-content: space-between; }
+    .info .card {
+      margin-bottom: 0;
+      width: 100%;
+      margin: 0 5px; }
+      .info .card h1 {
+        font-size: 1.5rem; }
+
+  .kontaktformulär {
+    margin-bottom: 0; } }
+@media only screen and (max-width: 600px) {
+  .header {
+    margin-bottom: 0; }
+    .header .navbar {
+      display: none; }
+
+  .butik h1 {
+    font-size: 1.4rem;
+    padding-left: 3vw; }
+  .butik h3 {
+    font-size: 1.2rem;
+    padding-left: 3vw; }
+
+  .om_oss .en_rad_med_ikoner .icon_row {
+    flex-direction: column;
+    height: 100%; }
+
+  .intro {
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    margin: 0; }
+    .intro .beskrivning {
+      width: 100vw;
+      padding: 0;
+      margin-bottom: 0; }
+      .intro .beskrivning h3 {
+        font-weight: bold;
+        margin-bottom: 1vh; }
+    .intro .öppettider {
+      width: 100vw; }
+
+  .info {
+    flex-direction: column; }
+    .info .card {
+      width: 100vw;
+      margin-bottom: 3vh; }
+
+  .kontaktformulär {
+    flex-direction: column;
+    height: 100%; }
+
+  .footer {
+    height: 100%; }
+    .footer .kontakt {
+      height: 100%; } }
+
+/*# sourceMappingURL=mobile.css.map */
