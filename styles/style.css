@@ -1,12 +1,19 @@
 @charset "UTF-8";
 @font-face {
-  font-family: InterReg;
-  src: url(../fonts/Interstate-Regular.ttf); }
+  font-family: 'interstate_condbold';
+  src: url("fonts/interstate-bold-cond-58b64162258ca-webfont.woff2") format("woff2"), url("fonts/interstate-bold-cond-58b64162258ca-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'interstate_compregular';
+  src: url("fonts/interstate-regular-comp-58b641cc0aca1-webfont.woff2") format("woff2"), url("fonts/interstate-regular-comp-58b641cc0aca1-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 * {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: Interstate-Regular, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   list-style: none;
   box-sizing: border-box;
   font-weight: lighter; }
@@ -22,8 +29,14 @@ a {
   padding: 3vh 3vw;
   height: 100%;
   display: flex;
-  margin-bottom: 3vh;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background: #004585; }
+  .header .lg h3 {
+    font-family: interstate_condbold;
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bolder; }
   .header .lg img {
     max-height: 125px;
     max-width: 200px; }
@@ -45,10 +58,9 @@ a {
           transition: all 0.3s;
           font-size: 1.5rem;
           padding: 5px 20px;
-          color: #0056a7; }
+          color: #fff; }
         .header .navbar .nav ul li:hover {
-          background: #fff;
-          color: #729ed7;
+          color: #fff;
           cursor: pointer;
           margin-bottom: 10px; }
 
@@ -91,7 +103,7 @@ a {
   flex-direction: column;
   align-self: center;
   text-align: center;
-  padding: 3vh 20vw;
+  padding: 2vh 20vw;
   margin-bottom: 5vh; }
   .om_oss .jaha h1 {
     color: #004585;
@@ -205,7 +217,44 @@ a {
     font-size: 1rem;
     width: 100%;
     height: 100%;
-    padding: 5vh 5vw; }
+    padding: 5vh 3vw;
+    border: 1px solid green; }
+    .kontaktformulär .kontaktinfo .asdf {
+      display: flex;
+      justify-content: space-around;
+      border: 1px solid orange;
+      width: 100%;
+      height: 100%;
+      padding: 3vh 0; }
+      .kontaktformulär .kontaktinfo .asdf .anställda {
+        display: flex;
+        flex: 1;
+        height: 100%; }
+        .kontaktformulär .kontaktinfo .asdf .anställda ul {
+          align-self: flex-start; }
+          .kontaktformulär .kontaktinfo .asdf .anställda ul li {
+            width: 100%;
+            margin: 1vh 0; }
+          .kontaktformulär .kontaktinfo .asdf .anställda ul li i {
+            margin-right: 1vw; }
+      .kontaktformulär .kontaktinfo .asdf .inforuta {
+        flex: 1.5;
+        display: flex;
+        border: 2px solid yellow;
+        width: 100%;
+        height: 100%; }
+        .kontaktformulär .kontaktinfo .asdf .inforuta .frame {
+          display: flex; }
+          .kontaktformulär .kontaktinfo .asdf .inforuta .frame .foto {
+            width: 50%;
+            height: 100%; }
+          .kontaktformulär .kontaktinfo .asdf .inforuta .frame .about {
+            width: 50%;
+            background: #fff;
+            color: #004585;
+            padding: 13px; }
+            .kontaktformulär .kontaktinfo .asdf .inforuta .frame .about p {
+              font-size: 0.9rem; }
   .kontaktformulär .inputBox {
     padding: 3vh 3vw;
     display: flex;
@@ -219,7 +268,7 @@ a {
       font-size: 1rem;
       margin: 10px 0; }
     .kontaktformulär .inputBox button {
-      background: #d4000f;
+      background: #ac000b;
       color: #fff;
       width: 150px;
       height: 40px;
@@ -229,7 +278,8 @@ a {
       transition: all 0.3s; }
     .kontaktformulär .inputBox button:hover {
       cursor: pointer;
-      transform: scale(1.2); }
+      transform: scale(1.15);
+      background: #d4000f; }
 
 .footer {
   padding: 3vh 3vw;

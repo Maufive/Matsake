@@ -15,3 +15,5 @@ function mailDetails() {
 function sendMail() {
 
 };
+
+const employee = document.querySelector('.employee');
