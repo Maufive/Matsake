@@ -20,17 +20,23 @@ $white: #fff;
   border: 1px solid red;
 }
 
+@mixin boxshadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+
 @font-face {
-    font-family: 'interstate_condbold';
-    src: url('fonts/interstate-bold-cond-58b64162258ca-webfont.woff2') format('woff2'),
-         url('fonts/interstate-bold-cond-58b64162258ca-webfont.woff') format('woff');
+    font-family: 'interstateregular';
+    src: url('fonts/interstate-regular-webfont.woff2') format('woff2'),
+         url('fonts/interstate-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'interstate_compregular';
-    src: url('fonts/interstate-regular-comp-58b641cc0aca1-webfont.woff2') format('woff2'),
-         url('fonts/interstate-regular-comp-58b641cc0aca1-webfont.woff') format('woff');
+    font-family: 'interstatebold';
+    src: url('fonts/interstate-bold-webfont.woff2') format('woff2'),
+         url('fonts/interstate-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -39,10 +45,9 @@ $white: #fff;
   margin: 0;
   padding: 0;
   border: none;
-  font-family: Helvetica, sans-serif;
+  font-family: interstateregular, Helvetica, sans-serif;
   list-style: none;
   box-sizing: border-box;
-  font-weight: lighter;
 }
 
 a {
@@ -54,6 +59,9 @@ a {
   margin: 3vh 0;
 }
 
+.header_wrapper {
+  @include boxshadow;
+}
 .header {
   @include componentPadding;
   height: 100%;
@@ -61,13 +69,13 @@ a {
   justify-content: space-between;
   background: $darkblue;
 
-  .lg {
+  .logo {
+    text-align: center;
     h3 {
-        font-family: interstate_condbold;
-        font-size: 1.2rem;
-        color: #fff;
-        text-align: center;
-        font-weight: bolder;
+      font-family: interstatebold, Helvetica;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-right: 5px;
     }
     img {
       max-height: 125px;
@@ -96,11 +104,10 @@ a {
           transition: all 0.3s;
           font-size: 1.5rem;
           padding: 5px 20px;
-          color: $white;
+          color: rgba($white, 0.8);
         }
 
         li:hover {
-          // background: $white;
           color: $white;
           cursor: pointer;
           margin-bottom: 10px;
@@ -112,7 +119,7 @@ a {
 
 }
 
-.butik {
+.jumbotron {
   width: 100vw;
   height: 400px;
   background: url("http://www.elon.se/Content/Images/uploaded/vendor_376/elon_b_stad_utv_converted.jpg");
@@ -135,7 +142,7 @@ a {
     border-radius: 0px;
 
     h1 {
-      // font-family: interstate_compregular;
+      font-family: interstatebold;
       font-weight: bold;
       font-size: 2rem;
       color: black;
@@ -147,7 +154,7 @@ a {
 
     }
     span {
-      // font-family: interstate_compregular;
+      font-family: interstatebold;
       color: $darkred;
       font-weight: bold;
     }
@@ -164,14 +171,14 @@ a {
   padding: 2vh 20vw;
   margin-bottom: 5vh;
 
-  .jaha {
+  .intro {
     h1 {
       color: $darkblue;
       font-weight: 600;
       font-size: 3rem;
     }
     h2 {
-      font-weight: bold;
+      font-family: interstatebold;
       font-size: 2rem;
     }
     p {
@@ -200,7 +207,7 @@ a {
   }
 }
 
-.intro {
+.info_wrapper {
   @include componentPadding;
   display: flex;
   width: 100%;
@@ -225,21 +232,25 @@ a {
     width: 50%;
     height: 100%;
     display: flex;
-    text-align: center;
     flex-direction: column;
     justify-content: center;
     background: $darkblue;
     color: #fff;
 
+    h2 { text-align: center; }
+
     .timetable {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      ul li {
+        padding: 5px 0;
+      }
     }
   }
 }
 
-.info {
+.utbud {
   @include componentPadding;
   width: 100%;
   height: 100%;
@@ -252,33 +263,32 @@ a {
     margin-bottom: 3vh;
     @include flexCenter;
     flex-direction: column;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     text-align: center;
+    overflow: hidden;
+    position: relative;
 
-    h1 {
-      font-family: Helvetica;
-      font-weight: normal;
-      color: $white;
-      background: rgba($darkblue, 0.6);
-      padding: 10px 30px;
-      width: 100%;
+    img {
+      width: 50vw;
+      height: 70vh;
+      transition: all 0.3s ease-in;
     }
 
-    p {
-      font-family: Helvetica;
-      color: $white;
+    img:hover { transform: scale(1.1); }
+
+
+    div {
+      height: 25vh;
+      width: 30vw;
+      padding: 20px;
       background: rgba($darkblue, 0.6);
-      padding: 10px 30px;
-      line-height: 1.3;
-      font-weight: lighter;
-      width: 100%;
+      color: $white;
+      position: absolute;
+      display: block;
     }
   }
 
   .backlunda {
-    background-image: url("http://www.backlunda.se/media/1006/vit_matt_miljo.jpg");
+    // background-image: url("http://www.backlunda.se/media/1006/vit_matt_miljo.jpg");
   }
   .creoform {
     background-image: url("http://creoform.se/Files/Billeder/inspirationspuff/2016/Creoform%20Exclusive_Carat_Ljusgr%C3%A5_2.jpg");
@@ -286,12 +296,13 @@ a {
   .vitvaror {
     background-image: url("https://roomly.se/gamla-content/uploads/2015/01/bildlista-14216762088gn4k.jpg");
   }
+
 }
 
 .kontaktformulär {
   width: 100%;
   height: 100%;
-  box-shadow: 5px 5px 30px black;
+  @include boxshadow;
   background: $darkblue;
   color: #fff;
   display: flex;
@@ -305,57 +316,66 @@ a {
     width: 100%;
     height: 100%;
     padding: 5vh 3vw;
-    border: 1px solid green;
 
 
     .asdf {
       display: flex;
       justify-content: space-around;
-      border: 1px solid orange;
+      align-items: center;
       width: 100%;
       height: 100%;
       padding: 3vh 0;
 
       .anställda {
         display: flex;
-        // border: 1px solid red;
         flex: 1;
         height: 100%;
         ul {
           align-self: flex-start;
           li {
             width: 100%;
-            margin: 1vh 0;
+            margin: 2vh 0;
+          }
+          li:hover{
+            text-decoration: underline;
+            color: $ltblue;
+            cursor: pointer;
           }
           li i {
             margin-right: 1vw;
+            color: white;
           }
         }
       }
 
       .inforuta {
-        flex: 1.5;
+        flex: 2;
         display: flex;
-        border: 2px solid yellow;
         width: 100%;
         height: 100%;
+        transition: all 0.3s ease-in;
+        opacity: 1;
+        position: relative;
 
         .frame {
+          width: 100%;
           display: flex;
           .foto {
-            width: 50%;
-            height: 100%;
+            max-width: 160px;
+            max-height: 250px;
           }
           .about {
-            width: 50%;
+            width: 100%;
             background: #fff;
             color: $darkblue;
-            padding: 13px;
-            p {
-              font-size: 0.9rem;
-            }
+            padding: 15px 10px;
           }
         }
+      }
+      .inforuta-active {
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
       }
     }
   }
@@ -378,12 +398,13 @@ a {
     button {
       background: $darkred;
       color: #fff;
-      width: 150px;
-      height: 40px;
+      width: 15vw;
+      height: 6vh;
       border-radius: 20px;
       box-shadow: 2px 2px 5px black;
       font-size: 0.8rem;
       transition: all 0.3s;
+      margin-top: 3vh;
     }
     button:hover {
       cursor: pointer;
