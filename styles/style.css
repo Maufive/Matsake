@@ -1,22 +1,21 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'interstate_condbold';
-  src: url("fonts/interstate-bold-cond-58b64162258ca-webfont.woff2") format("woff2"), url("fonts/interstate-bold-cond-58b64162258ca-webfont.woff") format("woff");
+  font-family: 'interstateregular';
+  src: url("fonts/interstate-regular-webfont.woff2") format("woff2"), url("fonts/interstate-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'interstate_compregular';
-  src: url("fonts/interstate-regular-comp-58b641cc0aca1-webfont.woff2") format("woff2"), url("fonts/interstate-regular-comp-58b641cc0aca1-webfont.woff") format("woff");
+  font-family: 'interstatebold';
+  src: url("fonts/interstate-bold-webfont.woff2") format("woff2"), url("fonts/interstate-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 * {
   margin: 0;
   padding: 0;
   border: none;
-  font-family: Helvetica, sans-serif;
+  font-family: interstateregular, Helvetica, sans-serif;
   list-style: none;
-  box-sizing: border-box;
-  font-weight: lighter; }
+  box-sizing: border-box; }
 
 a {
   color: #729ed7;
@@ -31,15 +30,16 @@ a {
   display: flex;
   justify-content: space-between;
   background: #004585; }
-  .header .lg h3 {
-    font-family: interstate_condbold;
-    font-size: 1.2rem;
-    color: #fff;
-    text-align: center;
-    font-weight: bolder; }
-  .header .lg img {
-    max-height: 125px;
-    max-width: 200px; }
+  .header .logo {
+    text-align: center; }
+    .header .logo h3 {
+      font-family: interstatebold, Helvetica;
+      font-size: 1.2rem;
+      color: #fff;
+      margin-right: 5px; }
+    .header .logo img {
+      max-height: 125px;
+      max-width: 200px; }
   .header .navbar {
     height: 10vh;
     display: flex;
@@ -58,7 +58,7 @@ a {
           transition: all 0.3s;
           font-size: 1.5rem;
           padding: 5px 20px;
-          color: #fff; }
+          color: rgba(255, 255, 255, 0.8); }
         .header .navbar .nav ul li:hover {
           color: #fff;
           cursor: pointer;
@@ -85,6 +85,7 @@ a {
     padding: 15px 10px;
     border-radius: 0px; }
     .butik div h1 {
+      font-family: interstatebold;
       font-weight: bold;
       font-size: 2rem;
       color: black; }
@@ -93,6 +94,7 @@ a {
       font-size: 1.5rem;
       color: black; }
     .butik div span {
+      font-family: interstatebold;
       color: #ac000b;
       font-weight: bold; }
 
@@ -110,7 +112,7 @@ a {
     font-weight: 600;
     font-size: 3rem; }
   .om_oss .jaha h2 {
-    font-weight: bold;
+    font-family: interstatebold;
     font-size: 2rem; }
   .om_oss .jaha p {
     font-size: 1.3rem; }
@@ -152,23 +154,26 @@ a {
     width: 50%;
     height: 100%;
     display: flex;
-    text-align: center;
     flex-direction: column;
     justify-content: center;
     background: #004585;
     color: #fff; }
+    .intro .öppettider h2 {
+      text-align: center; }
     .intro .öppettider .timetable {
       display: flex;
       justify-content: space-around;
       align-items: center; }
+      .intro .öppettider .timetable ul li {
+        padding: 5px 0; }
 
-.info {
+.utbud {
   padding: 3vh 3vw;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: space-around; }
-  .info .card {
+  .utbud .card {
     width: 30vw;
     height: 60vh;
     margin-bottom: 3vh;
@@ -180,26 +185,16 @@ a {
     background-position: center;
     background-size: cover;
     text-align: center; }
-    .info .card h1 {
-      font-family: Helvetica;
-      font-weight: normal;
-      color: #fff;
+    .utbud .card div {
+      height: 25vh;
+      padding: 20px;
       background: rgba(0, 69, 133, 0.6);
-      padding: 10px 30px;
-      width: 100%; }
-    .info .card p {
-      font-family: Helvetica;
-      color: #fff;
-      background: rgba(0, 69, 133, 0.6);
-      padding: 10px 30px;
-      line-height: 1.3;
-      font-weight: lighter;
-      width: 100%; }
-  .info .backlunda {
+      color: #fff; }
+  .utbud .backlunda {
     background-image: url("http://www.backlunda.se/media/1006/vit_matt_miljo.jpg"); }
-  .info .creoform {
+  .utbud .creoform {
     background-image: url("http://creoform.se/Files/Billeder/inspirationspuff/2016/Creoform%20Exclusive_Carat_Ljusgr%C3%A5_2.jpg"); }
-  .info .vitvaror {
+  .utbud .vitvaror {
     background-image: url("https://roomly.se/gamla-content/uploads/2015/01/bildlista-14216762088gn4k.jpg"); }
 
 .kontaktformulär {
@@ -217,12 +212,11 @@ a {
     font-size: 1rem;
     width: 100%;
     height: 100%;
-    padding: 5vh 3vw;
-    border: 1px solid green; }
+    padding: 5vh 3vw; }
     .kontaktformulär .kontaktinfo .asdf {
       display: flex;
       justify-content: space-around;
-      border: 1px solid orange;
+      align-items: center;
       width: 100%;
       height: 100%;
       padding: 3vh 0; }
@@ -234,27 +228,37 @@ a {
           align-self: flex-start; }
           .kontaktformulär .kontaktinfo .asdf .anställda ul li {
             width: 100%;
-            margin: 1vh 0; }
+            margin: 2vh 0; }
+          .kontaktformulär .kontaktinfo .asdf .anställda ul li:hover {
+            text-decoration: underline;
+            color: #d4000f;
+            cursor: pointer; }
           .kontaktformulär .kontaktinfo .asdf .anställda ul li i {
-            margin-right: 1vw; }
+            margin-right: 1vw;
+            color: white; }
       .kontaktformulär .kontaktinfo .asdf .inforuta {
-        flex: 1.5;
+        flex: 2;
         display: flex;
-        border: 2px solid yellow;
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        transition: all 0.3s ease-in;
+        opacity: 1;
+        position: relative; }
         .kontaktformulär .kontaktinfo .asdf .inforuta .frame {
+          width: 100%;
           display: flex; }
           .kontaktformulär .kontaktinfo .asdf .inforuta .frame .foto {
-            width: 50%;
-            height: 100%; }
+            max-width: 160px;
+            max-height: 250px; }
           .kontaktformulär .kontaktinfo .asdf .inforuta .frame .about {
-            width: 50%;
+            width: 100%;
             background: #fff;
             color: #004585;
-            padding: 13px; }
-            .kontaktformulär .kontaktinfo .asdf .inforuta .frame .about p {
-              font-size: 0.9rem; }
+            padding: 15px 10px; }
+      .kontaktformulär .kontaktinfo .asdf .inforuta-active {
+        display: flex;
+        flex-direction: column;
+        opacity: 1; }
   .kontaktformulär .inputBox {
     padding: 3vh 3vw;
     display: flex;
@@ -270,12 +274,13 @@ a {
     .kontaktformulär .inputBox button {
       background: #ac000b;
       color: #fff;
-      width: 150px;
-      height: 40px;
+      width: 15vw;
+      height: 6vh;
       border-radius: 20px;
       box-shadow: 2px 2px 5px black;
       font-size: 0.8rem;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      margin-top: 3vh; }
     .kontaktformulär .inputBox button:hover {
       cursor: pointer;
       transform: scale(1.15);
