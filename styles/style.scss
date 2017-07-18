@@ -51,9 +51,10 @@ $white: #fff;
 }
 
 a {
-  color: $ltblue;
+  color: $white;
   text-decoration: none;
 }
+a:hover { color: $ltblue; text-decoration: underline; }
 
 .container {
   margin: 3vh 0;
@@ -82,6 +83,8 @@ a {
       max-width: 200px;
     }
   }
+
+  .mobile_navbar { display: none; }
 
   .navbar {
     height: 10vh;
@@ -174,7 +177,7 @@ a {
   .intro {
     h1 {
       color: $darkblue;
-      font-weight: 600;
+      font-family: interstatebold;
       font-size: 3rem;
     }
     h2 {
@@ -225,7 +228,7 @@ a {
     iframe {
       width: 100%;
       height: 100%;
-      pointer-events: none;
+      // pointer-events: none;
     }
   }
   .öppettider {
@@ -265,30 +268,16 @@ a {
     flex-direction: column;
     text-align: center;
     overflow: hidden;
-    position: relative;
-
-    img {
-      width: 50vw;
-      height: 70vh;
-      transition: all 0.3s ease-in;
-    }
-
-    img:hover { transform: scale(1.1); }
-
-
+    background-size: cover;
+    color: #fff;
     div {
-      height: 25vh;
-      width: 30vw;
-      padding: 20px;
+      padding: 5%;
       background: rgba($darkblue, 0.6);
-      color: $white;
-      position: absolute;
-      display: block;
     }
   }
 
   .backlunda {
-    // background-image: url("http://www.backlunda.se/media/1006/vit_matt_miljo.jpg");
+    background-image: url("http://www.backlunda.se/media/1006/vit_matt_miljo.jpg");
   }
   .creoform {
     background-image: url("http://creoform.se/Files/Billeder/inspirationspuff/2016/Creoform%20Exclusive_Carat_Ljusgr%C3%A5_2.jpg");
@@ -318,7 +307,7 @@ a {
     padding: 5vh 3vw;
 
 
-    .asdf {
+    .anställda_wrapper {
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -353,13 +342,18 @@ a {
         display: flex;
         width: 100%;
         height: 100%;
-        transition: all 0.3s ease-in;
+        transition: all 0.5s ease-in;
         opacity: 1;
         position: relative;
 
         .frame {
           width: 100%;
-          display: flex;
+          display: none;
+          opacity: 0;
+          background: #fff;
+          will-change: opacity;
+          transition: all 0.5s ease-in-out;
+
           .foto {
             max-width: 160px;
             max-height: 250px;
@@ -368,14 +362,14 @@ a {
             width: 100%;
             background: #fff;
             color: $darkblue;
-            padding: 15px 10px;
+            padding: 20px 10px;
+            h3 { font-family: interstatebold; font-size: 1.8rem; }
+            a { font-size: 0.9rem; color: $darkblue; }
+            p { margin-top: 3vh; }
           }
         }
-      }
-      .inforuta-active {
-        display: flex;
-        flex-direction: column;
-        opacity: 1;
+        .frame-enter  { display: flex; }
+        .frame-enter-active  { opacity: 1; }
       }
     }
   }
@@ -419,9 +413,8 @@ a {
   @include componentPadding;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  height: 30vh;
+  height: 100%;
   width: 100%;
-  @include flexCenter;
 
   .kontakt {
     display: flex;
@@ -429,6 +422,8 @@ a {
     height: 100%;
     justify-content: space-around;
     align-items: center;
+    div ul li { margin: 10px 0; }
+    div ul li a { color: #fff; }
+    div ul li a:hover { text-decoration: underline; color: $ltblue; }
   }
-  .kontaktinfo ul { list-style: none; }
 }

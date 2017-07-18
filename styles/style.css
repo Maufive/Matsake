@@ -18,8 +18,12 @@
   box-sizing: border-box; }
 
 a {
-  color: #729ed7;
+  color: #fff;
   text-decoration: none; }
+
+a:hover {
+  color: #729ed7;
+  text-decoration: underline; }
 
 .container {
   margin: 3vh 0; }
@@ -43,6 +47,8 @@ a {
     .header .logo img {
       max-height: 125px;
       max-width: 200px; }
+  .header .mobile_navbar {
+    display: none; }
   .header .navbar {
     height: 10vh;
     display: flex;
@@ -112,7 +118,7 @@ a {
   margin-bottom: 5vh; }
   .om_oss .intro h1 {
     color: #004585;
-    font-weight: 600;
+    font-family: interstatebold;
     font-size: 3rem; }
   .om_oss .intro h2 {
     font-family: interstatebold;
@@ -151,8 +157,7 @@ a {
     flex-direction: column; }
     .info_wrapper .beskrivning iframe {
       width: 100%;
-      height: 100%;
-      pointer-events: none; }
+      height: 100%; }
   .info_wrapper .öppettider {
     width: 50%;
     height: 100%;
@@ -186,21 +191,13 @@ a {
     flex-direction: column;
     text-align: center;
     overflow: hidden;
-    position: relative; }
-    .utbud .card img {
-      width: 50vw;
-      height: 70vh;
-      transition: all 0.3s ease-in; }
-    .utbud .card img:hover {
-      transform: scale(1.1); }
+    background-size: cover;
+    color: #fff; }
     .utbud .card div {
-      height: 25vh;
-      width: 30vw;
-      padding: 20px;
-      background: rgba(0, 69, 133, 0.6);
-      color: #fff;
-      position: absolute;
-      display: block; }
+      padding: 5%;
+      background: rgba(0, 69, 133, 0.6); }
+  .utbud .backlunda {
+    background-image: url("http://www.backlunda.se/media/1006/vit_matt_miljo.jpg"); }
   .utbud .creoform {
     background-image: url("http://creoform.se/Files/Billeder/inspirationspuff/2016/Creoform%20Exclusive_Carat_Ljusgr%C3%A5_2.jpg"); }
   .utbud .vitvaror {
@@ -222,52 +219,64 @@ a {
     width: 100%;
     height: 100%;
     padding: 5vh 3vw; }
-    .kontaktformulär .kontaktinfo .asdf {
+    .kontaktformulär .kontaktinfo .anställda_wrapper {
       display: flex;
       justify-content: space-around;
       align-items: center;
       width: 100%;
       height: 100%;
       padding: 3vh 0; }
-      .kontaktformulär .kontaktinfo .asdf .anställda {
+      .kontaktformulär .kontaktinfo .anställda_wrapper .anställda {
         display: flex;
         flex: 1;
         height: 100%; }
-        .kontaktformulär .kontaktinfo .asdf .anställda ul {
+        .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul {
           align-self: flex-start; }
-          .kontaktformulär .kontaktinfo .asdf .anställda ul li {
+          .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li {
             width: 100%;
             margin: 2vh 0; }
-          .kontaktformulär .kontaktinfo .asdf .anställda ul li:hover {
+          .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li:hover {
             text-decoration: underline;
             color: #729ed7;
             cursor: pointer; }
-          .kontaktformulär .kontaktinfo .asdf .anställda ul li i {
+          .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li i {
             margin-right: 1vw;
             color: white; }
-      .kontaktformulär .kontaktinfo .asdf .inforuta {
+      .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta {
         flex: 2;
         display: flex;
         width: 100%;
         height: 100%;
-        transition: all 0.3s ease-in;
+        transition: all 0.5s ease-in;
         opacity: 1;
         position: relative; }
-        .kontaktformulär .kontaktinfo .asdf .inforuta .frame {
+        .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame {
           width: 100%;
-          display: flex; }
-          .kontaktformulär .kontaktinfo .asdf .inforuta .frame .foto {
+          display: none;
+          opacity: 0;
+          background: #fff;
+          will-change: opacity;
+          transition: all 0.5s ease-in-out; }
+          .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .foto {
             max-width: 160px;
             max-height: 250px; }
-          .kontaktformulär .kontaktinfo .asdf .inforuta .frame .about {
+          .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about {
             width: 100%;
             background: #fff;
             color: #004585;
-            padding: 15px 10px; }
-      .kontaktformulär .kontaktinfo .asdf .inforuta-active {
-        display: flex;
-        flex-direction: column;
-        opacity: 1; }
+            padding: 20px 10px; }
+            .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about h3 {
+              font-family: interstatebold;
+              font-size: 1.8rem; }
+            .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about a {
+              font-size: 0.9rem;
+              color: #004585; }
+            .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about p {
+              margin-top: 3vh; }
+        .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame-enter {
+          display: flex; }
+        .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame-enter-active {
+          opacity: 1; }
   .kontaktformulär .inputBox {
     padding: 3vh 3vw;
     display: flex;
@@ -299,18 +308,20 @@ a {
   padding: 3vh 3vw;
   background: rgba(0, 0, 0, 0.8);
   color: white;
-  height: 30vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+  height: 100%;
+  width: 100%; }
   .footer .kontakt {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: space-around;
     align-items: center; }
-  .footer .kontaktinfo ul {
-    list-style: none; }
+    .footer .kontakt div ul li {
+      margin: 10px 0; }
+    .footer .kontakt div ul li a {
+      color: #fff; }
+    .footer .kontakt div ul li a:hover {
+      text-decoration: underline;
+      color: #729ed7; }
 
 /*# sourceMappingURL=style.css.map */

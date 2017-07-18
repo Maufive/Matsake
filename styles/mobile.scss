@@ -8,7 +8,7 @@
     }
   }
 
-  .butik {
+  .jumbotron {
     height: 350px;
     padding-left: 0;
     margin-bottom: 3vh;
@@ -22,13 +22,12 @@
     height: 30vh;
    }
 
-  .info {
+  .utbud {
     padding: 0;
     justify-content: space-between;
     .card {
       margin-bottom: 0;
       width: 100%;
-      margin: 0 5px;
       h1 { font-size: 1.5rem; }
     }
   }
@@ -41,11 +40,70 @@
 
   .header {
     margin-bottom: 0;
+
+    .mobile_navbar {
+      display: flex;
+      align-items: center;
+      .mobile_nav {
+        background: #fff;
+        color: #004585;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+        .dropdown {
+          height: 50vh;
+          width: 50vw;
+          right: 10%;
+          top: 150%;
+          background: #fff;
+          position: absolute;
+          z-index: 5;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+          display: none;
+          opacity: 0;
+          will-change: opacity;
+          transition: all 0.3s ease-in;
+
+          ul {
+            border: 1px solid #ccc;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+
+            li { font-size: 2rem; }
+          }
+
+          ul li a { color: #729ed7; }
+
+          .arrow {
+            position: absolute;
+            right: 7%;
+            width: 25px;
+            height: 25px;
+            display: block;
+            background:white;
+            transform: translateY(-50%) rotate(45deg);
+          }
+        }
+        .dropdown-enter { display: block; }
+        .dropdown-enter-active { opacity: 1; }
+      }
+      .mobile_nav:hover { cursor: pointer; }
+    }
+
     .navbar {
       display: none;
       }
     }
-    .butik {
+    .jumbotron {
       h1 {
         font-size: 1.4rem;
         padding-left: 3vw;
@@ -57,15 +115,23 @@
     }
 
     .om_oss {
-      .en_rad_med_ikoner {
-        .icon_row {
-          flex-direction: column;
-          height: 100%;
-        }
+      margin-bottom: 3vh;
+      .intro {
+        height: 100%;
+        h1 { margin-bottom: 3vh; font-family: interstatebold; }
       }
     }
 
-  .intro {
+    .en_rad_med_ikoner {
+      display: none;
+
+      .icon_row {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+  .info_wrapper {
     flex-direction: column;
     height: 60vh;
     width: 100%;
@@ -82,20 +148,31 @@
     }
     .öppettider {
       width: 100vw;
+      padding: 20px 0;
     }
   }
 
-  .info {
+  .utbud {
     flex-direction: column;
     .card {
-      width: 100vw;
+      width: 100%;
       margin-bottom: 3vh;
+      div {
+        width: 100%;
+        padding: 20px 10px;
+      }
     }
   }
 
   .kontaktformulär {
     flex-direction: column;
     height: 100%;
+    .kontaktinfo .anställda_wrapper {
+      display: none;
+    }
+    .inputBox button {
+      width: 90%;
+    }
   }
 
   .footer {
