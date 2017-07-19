@@ -5,8 +5,6 @@ function textboxEnter() {
   setTimeout(() => this.classList.contains('hover-enter') && this.classList.add('hover-active'), 150);
   this.children[1].classList.add('element-display');
   setTimeout(() => this.children[1].classList.contains('element-display') && this.children[1].classList.add('element-display-active'), 150);
-
-  console.log();
 }
 
 function textboxLeave() {
