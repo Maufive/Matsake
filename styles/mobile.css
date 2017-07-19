@@ -167,14 +167,15 @@
       width: 100%;
       height: 100vh;
       margin: 0;
-      background-size: cover; }
+      background-size: cover;
+      order: 0; }
       .utbud_wrapper .vitvaror_kategori .textbox {
         padding: 5vh 5vw; }
       .utbud_wrapper .vitvaror_kategori .hover-enter {
         height: 40%; }
         .utbud_wrapper .vitvaror_kategori .hover-enter h3 {
           font-size: 2rem; }
-    .utbud_wrapper .hem_hushåll {
+    .utbud_wrapper .hushållsapparater {
       height: 81vh;
       background-image: url("../img/espresso_liten.png"); }
     .utbud_wrapper .kök .textbox_container div {
