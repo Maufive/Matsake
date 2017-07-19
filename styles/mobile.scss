@@ -204,7 +204,6 @@
       height: 100vh;
       margin: 0;
       background-size: cover;
-      order: 0;
 
       .textbox {
         padding: 5vh 5vw;
@@ -217,7 +216,7 @@
     .hushållsapparater { height: 81vh; background-image: url("../img/espresso_liten.png"); }
 
     .kök .textbox_container div { margin-top: 5%; }
- 
+
     .kaminer { /* ingen content atm */ }
 
     .vitvaror {
