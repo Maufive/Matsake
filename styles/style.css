@@ -19,11 +19,11 @@
 
 a {
   color: #fff;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: all 0.35s ease-in; }
 
 a:hover {
-  color: #729ed7;
-  text-decoration: underline; }
+  color: #729ed7; }
 
 .container {
   margin: 3vh 0; }
@@ -83,8 +83,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 5vw;
-  margin-bottom: 3vh; }
+  padding-left: 5vw; }
   .jumbotron div {
     display: flex;
     position: absolute;
@@ -114,7 +113,7 @@ a:hover {
   flex-direction: column;
   align-self: center;
   text-align: center;
-  padding: 2vh 20vw;
+  padding: 5vh 20vw;
   margin-bottom: 5vh; }
   .om_oss .intro h1 {
     color: #004585;
@@ -201,7 +200,7 @@ a:hover {
     background-image: url("http://www.backlunda.se/media/1006/vit_matt_miljo.jpg"); }
   .utbud .creoform {
     background-image: url("http://creoform.se/Files/Billeder/inspirationspuff/2016/Creoform%20Exclusive_Carat_Ljusgr%C3%A5_2.jpg"); }
-  .utbud .vitvaror {
+  .utbud .vitvaror_card {
     background-image: url("https://roomly.se/gamla-content/uploads/2015/01/bildlista-14216762088gn4k.jpg"); }
 
 .kontaktformulär {
@@ -248,8 +247,6 @@ a:hover {
         display: flex;
         width: 100%;
         height: 100%;
-        transition: all 0.5s ease-in;
-        opacity: 1;
         position: relative; }
         .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame {
           width: 100%;
@@ -257,7 +254,7 @@ a:hover {
           opacity: 0;
           background: #fff;
           will-change: opacity;
-          transition: all 0.5s ease-in-out; }
+          transition: all 0.4s ease-in-out; }
           .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .foto {
             max-width: 160px;
             max-height: 250px; }
@@ -315,14 +312,119 @@ a:hover {
     display: flex;
     width: 100%;
     height: 100%;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: space-around; }
+    .footer .kontakt div h4 {
+      color: #729ed7; }
     .footer .kontakt div ul li {
       margin: 10px 0; }
     .footer .kontakt div ul li a {
       color: #fff; }
     .footer .kontakt div ul li a:hover {
-      text-decoration: underline;
       color: #729ed7; }
+
+.utbud_wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff; }
+  .utbud_wrapper .vitvaror_kategori {
+    width: 42vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover; }
+    .utbud_wrapper .vitvaror_kategori .textbox {
+      background: rgba(114, 158, 215, 0.5);
+      color: #fff;
+      padding: 1vh 1vw;
+      transition: all 0.4s ease-in;
+      height: 20%; }
+      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container {
+        display: none;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+        will-change: opacity;
+        font-size: 1rem; }
+      .utbud_wrapper .vitvaror_kategori .textbox h2 {
+        font-family: interstatebold;
+        font-size: 1.5rem;
+        transition: all 0.4s ease-in; }
+      .utbud_wrapper .vitvaror_kategori .textbox h3 {
+        font-family: interstatebold;
+        font-size: 1rem;
+        transition: all 0.4s ease-in; }
+      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container a {
+        color: #004585;
+        font-weight: bold; }
+      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container a:hover {
+        color: #fff; }
+      .utbud_wrapper .vitvaror_kategori .textbox .element-display {
+        display: block; }
+      .utbud_wrapper .vitvaror_kategori .textbox .element-display-active {
+        opacity: 1;
+        padding-top: 10px; }
+    .utbud_wrapper .vitvaror_kategori .hover-enter {
+      height: 60%; }
+      .utbud_wrapper .vitvaror_kategori .hover-enter h2 {
+        font-size: 2rem; }
+      .utbud_wrapper .vitvaror_kategori .hover-enter h3 {
+        font-size: 1.5rem; }
+    .utbud_wrapper .vitvaror_kategori .hover-active {
+      background: rgba(114, 158, 215, 0.7); }
+  .utbud_wrapper .hem_hushåll {
+    background-image: url("../img/espresso.jpeg");
+    margin-bottom: 5vh; }
+    .utbud_wrapper .hem_hushåll .textbox_container ul {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%; }
+      .utbud_wrapper .hem_hushåll .textbox_container ul li {
+        padding: 10px 10px; }
+  .utbud_wrapper .kök {
+    margin-bottom: 5vh;
+    background-image: url("../img/kök.jpg"); }
+    .utbud_wrapper .kök .textbox_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .utbud_wrapper .kök .textbox_container div {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%; }
+        .utbud_wrapper .kök .textbox_container div button {
+          font-size: 1.2rem;
+          height: 50px;
+          margin: 0 20px;
+          background: #fff;
+          color: #004585;
+          transition: all 0.4s ease-in;
+          padding: 10px; }
+        .utbud_wrapper .kök .textbox_container div button:hover {
+          color: #fff;
+          background: #004585;
+          cursor: pointer; }
+  .utbud_wrapper .kaminer {
+    width: 29vw;
+    height: 30vh;
+    background-image: url("../img/fire.jpg");
+    background-position: bottom; }
+  .utbud_wrapper .vitvaror {
+    width: 29vw;
+    height: 30vh;
+    background-image: url("../img/ugn_disk.jpeg"); }
+    .utbud_wrapper .vitvaror .textbox_container ul li a:hover {
+      margin-left: 10px; }
+  .utbud_wrapper .värmepumpar {
+    width: 29vw;
+    height: 30vh;
+    background-image: url("../img/ac.jpg"); }
 
 /*# sourceMappingURL=style.css.map */

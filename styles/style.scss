@@ -50,11 +50,8 @@ $white: #fff;
   box-sizing: border-box;
 }
 
-a {
-  color: $white;
-  text-decoration: none;
-}
-a:hover { color: $ltblue; text-decoration: underline; }
+a { color: $white; text-decoration: none; transition: all 0.35s ease-in; }
+a:hover { color: $ltblue; }
 
 .container {
   margin: 3vh 0;
@@ -133,7 +130,6 @@ a:hover { color: $ltblue; text-decoration: underline; }
   flex-direction: column;
   justify-content: center;
   padding-left: 5vw;
-  margin-bottom: 3vh;
 
   div {
     display: flex;
@@ -171,7 +167,7 @@ a:hover { color: $ltblue; text-decoration: underline; }
   flex-direction: column;
   align-self: center;
   text-align: center;
-  padding: 2vh 20vw;
+  padding: 5vh 20vw;
   margin-bottom: 5vh;
 
   .intro {
@@ -282,7 +278,7 @@ a:hover { color: $ltblue; text-decoration: underline; }
   .creoform {
     background-image: url("http://creoform.se/Files/Billeder/inspirationspuff/2016/Creoform%20Exclusive_Carat_Ljusgr%C3%A5_2.jpg");
     }
-  .vitvaror {
+  .vitvaror_card {
     background-image: url("https://roomly.se/gamla-content/uploads/2015/01/bildlista-14216762088gn4k.jpg");
   }
 
@@ -342,8 +338,6 @@ a:hover { color: $ltblue; text-decoration: underline; }
         display: flex;
         width: 100%;
         height: 100%;
-        transition: all 0.5s ease-in;
-        opacity: 1;
         position: relative;
 
         .frame {
@@ -352,7 +346,7 @@ a:hover { color: $ltblue; text-decoration: underline; }
           opacity: 0;
           background: #fff;
           will-change: opacity;
-          transition: all 0.5s ease-in-out;
+          transition: all 0.4s ease-in-out;
 
           .foto {
             max-width: 160px;
@@ -421,9 +415,120 @@ a:hover { color: $ltblue; text-decoration: underline; }
     width: 100%;
     height: 100%;
     justify-content: space-around;
-    align-items: center;
+    div h4 { color: $ltblue; }
     div ul li { margin: 10px 0; }
     div ul li a { color: #fff; }
-    div ul li a:hover { text-decoration: underline; color: $ltblue; }
+    div ul li a:hover { color: $ltblue; }
   }
+}
+
+.utbud_wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff;
+
+  .vitvaror_kategori {
+    width: 42vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+
+    .textbox {
+      background: rgba($ltblue, 0.5);
+      color: #fff;
+      padding: 1vh 1vw;
+      transition: all 0.4s ease-in;
+      height: 20%;
+      .textbox_container {
+        display: none;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+        will-change: opacity;
+        font-size: 1rem;
+      }
+
+      h2 { font-family: interstatebold; font-size: 1.5rem; transition: all 0.4s ease-in; }
+      h3 { font-family: interstatebold; font-size: 1rem; transition: all 0.4s ease-in;  }
+      .textbox_container a { color: $darkblue; font-weight: bold; }
+      .textbox_container a:hover { color: #fff; }
+
+      .element-display { display: block; }
+      .element-display-active { opacity: 1; padding-top: 10px; }
+    }
+    .hover-enter {
+      height: 60%;
+      h2 { font-size: 2rem; }
+      h3 { font-size: 1.5rem; }
+    }
+    .hover-active { background: rgba($ltblue, 0.7); }
+  }
+
+  .hem_hushåll {
+    background-image: url("../img/espresso.jpeg");
+    margin-bottom: 5vh;
+    .textbox_container ul {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%;
+      li {
+        padding: 10px 10px;
+      }
+    }
+  }
+
+  .kök {
+    margin-bottom: 5vh;
+    background-image: url("../img/kök.jpg");
+     .textbox_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      div {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        button {
+          font-size: 1.2rem;
+          height: 50px;
+          margin: 0 20px;
+          background: #fff;
+          color: $darkblue;
+          transition: all 0.4s ease-in;
+          padding: 10px;
+        }
+        button:hover { color: #fff; background: $darkblue; cursor: pointer; }
+      }
+    }
+  }
+
+  .kaminer {
+    width: 29vw;
+    height: 30vh;
+    background-image: url("../img/fire.jpg");
+    background-position: bottom;
+   }
+
+  .vitvaror {
+    width: 29vw;
+    height: 30vh;
+    background-image: url("../img/ugn_disk.jpeg");
+    .textbox_container ul li a {  }
+    .textbox_container ul li a:hover { margin-left: 10px; }
+   }
+
+  .värmepumpar {
+    width: 29vw;
+    height: 30vh;
+    background-image: url("../img/ac.jpg");
+   }
 }

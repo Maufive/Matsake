@@ -149,32 +149,9 @@
       height: 100%; }
 
   .utbud_wrapper {
-    padding: 0;
     flex-direction: column;
-    justify-content: flex-start; }
+    width: 100%; }
     .utbud_wrapper .vitvaror_kategori {
-      width: 100%;
-      height: 100vh;
-      margin: 0;
-      background-size: cover; }
-      .utbud_wrapper .vitvaror_kategori .textbox {
-        padding: 5vh 5vw; }
-      .utbud_wrapper .vitvaror_kategori .hover-enter {
-        height: 40%; }
-        .utbud_wrapper .vitvaror_kategori .hover-enter h3 {
-          font-size: 2rem; }
-    .utbud_wrapper .hem_hushåll {
-      height: 81vh;
-      background-image: url("../img/espresso_liten.png"); }
-    .utbud_wrapper .kök .textbox_container div {
-      margin-top: 5%; }
-    .utbud_wrapper .kaminer {
-      /* ingen content atm */ }
-    .utbud_wrapper .vitvaror {
-      order: 0;
-      background-image: url("../img/ugn_disk_liten.png"); }
-      .utbud_wrapper .vitvaror .textbox .textbox_container > ul > li {
-        margin: 10px;
-        font-size: 1.5rem; } }
+      width: 100vw; } }
 
-/*# sourceMappingURL=mobile.css.map */
+/*# sourceMappingURL=mobile.css[A.map */
