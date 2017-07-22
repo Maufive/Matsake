@@ -201,23 +201,25 @@
     justify-content: flex-start;
     .vitvaror_kategori {
       width: 100%;
-      height: 100vh;
+      height: 80vh;
       margin: 0;
       background-size: cover;
 
       .textbox {
         padding: 5vh 5vw;
+        h3 { font-size: 1.5rem; }
+        .textbox_container {
+          font-size: 1rem;
+        }
       }
       .hover-enter {
         height: 40%;
         h3 { font-size: 2rem; }
       }
     }
-    .hushållsapparater { height: 81vh; background-image: url("../img/espresso_liten.png"); }
+    .hushållsapparater { background-image: url("../img/espresso_liten.png"); }
 
-    .kök .textbox_container div { margin-top: 5%; }
-
-    .kaminer { /* ingen content atm */ }
+    .värme { /* ingen content atm */ }
 
     .vitvaror {
       order: 0;
@@ -226,6 +228,22 @@
         margin: 10px;
         font-size: 1.5rem;
       }
+    }
+  }
+
+
+  .om_oss_wrap {
+    width: 100%;
+    .container {
+      padding: 0;
+      width: 100%;
+    }
+    .box {
+      width: 100%;
+      padding: 0;
+    }
+    .carousel {
+      display: none;
     }
   }
 }

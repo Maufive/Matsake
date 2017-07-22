@@ -29,6 +29,9 @@ a:hover {
 .container {
   margin: 3vh 0; }
 
+.active {
+  color: #fff; }
+
 .header_wrapper {
   box-shadow: 0px 0px 20px black; }
 
@@ -77,7 +80,7 @@ a:hover {
 .jumbotron {
   width: 100vw;
   height: 60vh;
-  background: url("http://www.elon.se/Content/Images/uploaded/vendor_376/elon_b_stad_utv_converted.jpg");
+  background: url("../img/elon_butik.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -110,8 +113,8 @@ a:hover {
   flex-direction: column;
   align-self: center;
   text-align: center;
-  padding: 5vh 20vw;
-  margin-bottom: 5vh; }
+  padding: 3vh 20vw;
+  margin-bottom: 3vh; }
   .om_oss .intro h1 {
     color: #004585;
     font-family: interstatebold;
@@ -143,7 +146,7 @@ a:hover {
   height: 40vh;
   justify-content: center;
   align-items: center;
-  margin: 5vh 0; }
+  margin: 3vh 0; }
   .info_wrapper .beskrivning {
     width: 50%;
     height: 100%;
@@ -300,7 +303,7 @@ a:hover {
       background: #d4000f; }
 
 .footer {
-  padding: 3vh 3vw;
+  padding: 5vh 5vw;
   background: rgba(0, 0, 0, 0.8);
   color: white;
   height: 100%;
@@ -319,6 +322,20 @@ a:hover {
     .footer .kontakt div ul li a:hover {
       color: #729ed7; }
 
+/* UTBUD <-----<  */
+.btn {
+  font-size: 1.5rem;
+  height: 50px;
+  background: #fff;
+  color: #004585;
+  transition: all 0.4s ease-in;
+  padding: 10px; }
+
+.btn:hover {
+  color: #fff;
+  background: #004585;
+  cursor: pointer; }
+
 .utbud_wrapper {
   height: 100%;
   width: 100%;
@@ -327,15 +344,17 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: #fff; }
+  background: #fff;
+  box-shadow: 0px 0px 20px black; }
   .utbud_wrapper .vitvaror_kategori {
-    width: 42vw;
+    width: 44vw;
     height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    margin-bottom: 3vh; }
     .utbud_wrapper .vitvaror_kategori .textbox {
       background: rgba(114, 158, 215, 0.5);
       color: #fff;
@@ -347,7 +366,10 @@ a:hover {
         opacity: 0;
         transition: all 0.4s ease-in;
         will-change: opacity;
-        font-size: 1rem; }
+        font-size: 0.8rem; }
+      .utbud_wrapper .vitvaror_kategori .textbox .fa-arrow-circle-up {
+        transition: all 0.4s ease-in;
+        float: right; }
       .utbud_wrapper .vitvaror_kategori .textbox h2 {
         font-family: interstatebold;
         font-size: 1.5rem;
@@ -372,23 +394,26 @@ a:hover {
         font-size: 2rem; }
       .utbud_wrapper .vitvaror_kategori .hover-enter h3 {
         font-size: 1.5rem; }
+      .utbud_wrapper .vitvaror_kategori .hover-enter .fa-arrow-circle-up {
+        font-size: 2rem;
+        transform: rotate(-180deg); }
     .utbud_wrapper .vitvaror_kategori .hover-active {
       background: rgba(114, 158, 215, 0.7); }
   .utbud_wrapper .hushållsapparater {
     background-image: url("../img/espresso.jpeg");
     margin-bottom: 5vh;
     order: 3;
-    height: 30vh;
-    width: 29vw; }
+    height: 30vh; }
     .utbud_wrapper .hushållsapparater .textbox_container ul {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
+      font-size: 1.2rem;
       height: 100%; }
       .utbud_wrapper .hushållsapparater .textbox_container ul li {
         padding: 5px 5px; }
   .utbud_wrapper .kök {
-    order: 1;
-    margin-bottom: 5vh;
+    order: 2;
     background-image: url("../img/kök.jpg"); }
     .utbud_wrapper .kök .textbox_container {
       width: 100%;
@@ -397,38 +422,57 @@ a:hover {
       align-items: center; }
       .utbud_wrapper .kök .textbox_container div {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         padding: 10px;
         width: 100%; }
-        .utbud_wrapper .kök .textbox_container div button {
-          font-size: 1.2rem;
-          height: 50px;
-          margin: 0 20px;
-          background: #fff;
-          color: #004585;
-          transition: all 0.4s ease-in;
-          padding: 10px; }
-        .utbud_wrapper .kök .textbox_container div button:hover {
-          color: #fff;
-          background: #004585;
-          cursor: pointer; }
-  .utbud_wrapper .kaminer {
-    width: 29vw;
+  .utbud_wrapper .värme {
     height: 30vh;
     background-image: url("../img/fire.jpg");
     background-position: bottom;
     order: 4; }
+    .utbud_wrapper .värme .textbox_container div {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      padding: 4px; }
+      .utbud_wrapper .värme .textbox_container div .btn {
+        font-size: 1.1rem;
+        height: 35px;
+        padding: 5px 10px; }
   .utbud_wrapper .vitvaror {
-    order: 2;
+    order: 1;
     background-image: url("../img/ugn_disk.jpeg"); }
     .utbud_wrapper .vitvaror .list_container {
-      display: flex; }
+      display: flex;
+      justify-content: space-around; }
       .utbud_wrapper .vitvaror .list_container ul {
         padding-right: 5px; }
-  .utbud_wrapper .värmepumpar {
-    width: 29vw;
-    height: 30vh;
-    background-image: url("../img/ac.jpg");
-    order: 5; }
+
+/* OM OSS <--------< */
+.om_oss_wrap {
+  height: 100%;
+  width: 100%;
+  padding: 5% 3vw;
+  display: flex;
+  background: #fff; }
+  .om_oss_wrap .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    margin: 0; }
+    .om_oss_wrap .container .box {
+      height: 100%;
+      width: 100%;
+      padding: 3vh 6vw; }
+      .om_oss_wrap .container .box h1, .om_oss_wrap .container .box h2 {
+        color: #004585; }
+  .om_oss_wrap .carousel {
+    height: 100%;
+    width: 300px; }
+    .om_oss_wrap .carousel div {
+      padding: 10px; }
+      .om_oss_wrap .carousel div img {
+        max-width: 250px; }
 
 /*# sourceMappingURL=style.css.map */
