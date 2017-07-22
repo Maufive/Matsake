@@ -207,6 +207,10 @@
 
       .textbox {
         padding: 5vh 5vw;
+        h3 { font-size: 1.5rem; }
+        .textbox_container {
+          font-size: 1rem;
+        }
       }
       .hover-enter {
         height: 40%;
@@ -215,17 +219,31 @@
     }
     .hushållsapparater { background-image: url("../img/espresso_liten.png"); }
 
-    .kök .textbox_container div { margin-top: 5%; }
-
-    .kaminer { /* ingen content atm */ }
+    .värme { /* ingen content atm */ }
 
     .vitvaror {
       order: 0;
-      background-image: url("../img/ugn_disk.png");
+      background-image: url("../img/ugn_disk_liten.png");
       .textbox .textbox_container > ul > li {
         margin: 10px;
         font-size: 1.5rem;
       }
+    }
+  }
+
+
+  .om_oss_wrap {
+    width: 100%;
+    .container {
+      padding: 0;
+      width: 100%;
+    }
+    .box {
+      width: 100%;
+      padding: 0;
+    }
+    .carousel {
+      display: none;
     }
   }
 }

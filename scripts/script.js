@@ -39,9 +39,6 @@ const personal = {
   marcus: {
     info: '<img src="img/marcus.jpeg" class="foto"/> <div class="about"><h3>Marcus Berggren</h3><br /><h4><i class="fa fa-info-circle"></i> Säljare</h4><br /> <i class="fa fa-envelope"></i> <a href="#">marcus.berggren@elon.se</a> <br /> <p><i class="fa fa-phone"></i> 090124482</p> </div>'
   },
-  maggan: {
-    info: '<img src="img/maggan.jpeg" class="foto"/> <div class="about"><h3>Maggan Gustafsson</h3><br /><h4><i class="fa fa-info-circle"></i> Säljare</h4><br /> <i class="fa fa-envelope"></i> <a href="#">umea@elon.se</a> <br /> <p><i class="fa fa-phone"></i> 090124482</p> </div>'
-  },
   nils: {
     info: '<img src="img/nils.jpeg" class="foto"/> <div class="about"><h3>Nils Jakobsson</h3><br /><h4><i class="fa fa-info-circle"></i> Installatör</h4><br /> <i class="fa fa-envelope"></i> <a href="#">umea@elon.se</a> <br /> <p><i class="fa fa-phone"></i> 090124482</p> </div>'
   }
