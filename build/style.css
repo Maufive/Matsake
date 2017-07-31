@@ -1,0 +1,693 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'interstateregular';
+  src: url("fonts/interstate-regular-webfont.woff2") format("woff2"), url("fonts/interstate-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'interstatebold';
+  src: url("fonts/interstate-bold-webfont.woff2") format("woff2"), url("fonts/interstate-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: interstateregular, Helvetica, sans-serif;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in;
+  outline: none;
+  cursor: pointer; }
+
+a:hover {
+  color: #729ed7; }
+
+.container {
+  margin: 3vh 0; }
+
+.active {
+  color: #fff; }
+
+.header_wrapper {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); }
+
+.header {
+  padding: 3vh 3vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #004585; }
+  .header .logo {
+    text-align: center; }
+    .header .logo h3 {
+      font-family: interstatebold, Helvetica;
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.9);
+      margin-right: 5px; }
+    .header .logo img {
+      max-height: 125px;
+      max-width: 200px; }
+  .header .mobile_navbar {
+    display: none; }
+  .header .navbar {
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+    align-self: center; }
+    .header .navbar .nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%; }
+      .header .navbar .nav ul {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+        height: 100%; }
+        .header .navbar .nav ul li {
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+          font-size: 1.5rem;
+          padding: 5px 20px;
+          color: rgba(255, 255, 255, 0.8); }
+        .header .navbar .nav ul li:hover {
+          color: #fff;
+          cursor: pointer;
+          margin-bottom: 10px; }
+
+.jumbotron {
+  width: 100vw;
+  height: 60vh;
+  background: url("../img/elon_butik.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .jumbotron div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 15px 10px;
+    border-radius: 0px; }
+    .jumbotron div h1 {
+      font-family: interstatebold;
+      font-weight: bold;
+      font-size: 2rem;
+      color: black; }
+    .jumbotron div h3 {
+      font-weight: normal;
+      font-size: 1.5rem;
+      color: black; }
+
+.om_oss {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-item-align: center;
+  align-self: center;
+  text-align: center;
+  padding: 5vh 20vw;
+  line-height: 1.3; }
+  .om_oss .intro h1 {
+    color: #004585;
+    font-family: interstatebold;
+    font-size: 3rem; }
+  .om_oss .intro h2 {
+    font-family: interstatebold;
+    font-size: 2rem; }
+  .om_oss .intro p {
+    font-size: 1.3rem; }
+  .om_oss .en_rad_med_ikoner {
+    width: 100%;
+    height: 100%; }
+    .om_oss .en_rad_med_ikoner .icon_row {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      .om_oss .en_rad_med_ikoner .icon_row li {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 3vh 3vw;
+        color: #0056a7; }
+        .om_oss .en_rad_med_ikoner .icon_row li i {
+          font-size: 5rem;
+          padding-top: 15px;
+          color: #0056a7; }
+
+.info_wrapper {
+  padding: 3vh 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .info_wrapper .beskrivning {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .info_wrapper .beskrivning iframe {
+      width: 100%;
+      height: 100%;
+      pointer-events: none; }
+  .info_wrapper .öppettider {
+    width: 50%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: #004585;
+    color: #fff; }
+    .info_wrapper .öppettider h2 {
+      text-align: center; }
+    .info_wrapper .öppettider .timetable {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .info_wrapper .öppettider .timetable ul li {
+        padding: 5px 0; }
+
+.utbud {
+  padding: 3vh 3vw;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background: #f7f7f7;
+  padding: 10vh 0; }
+  .utbud .card {
+    width: 30vw;
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    color: #fff; }
+    .utbud .card div {
+      padding: 5%;
+      background: rgba(0, 69, 133, 0.6); }
+  .utbud .backlunda {
+    background-image: url("../img/backlunda.jpg");
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .utbud .creoform {
+    background-image: url("../img/creoform.jpg");
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3; }
+  .utbud .vitvaror_card {
+    background-image: url("../img/vitt.jpg");
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+
+.kontaktformulär {
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: #004585;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .kontaktformulär .kontaktinfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 3vh 3vw; }
+    .kontaktformulär .kontaktinfo .anställda_wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      width: 100%;
+      height: 250px;
+      margin-top: 3vh; }
+      .kontaktformulär .kontaktinfo .anställda_wrapper .anställda {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        height: 100%; }
+        .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul {
+          -ms-flex-item-align: start;
+          align-self: flex-start;
+          line-height: 2; }
+          .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li {
+            width: 100%;
+            -webkit-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            margin-left: 0px; }
+          .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li:hover {
+            text-decoration: underline;
+            color: #729ed7;
+            cursor: pointer;
+            margin-left: 5px; }
+          .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li i {
+            margin-right: 1vw; }
+      .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta {
+        -webkit-box-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 100%; }
+        .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame {
+          width: 100%;
+          display: none;
+          opacity: 0;
+          background: #fff;
+          will-change: opacity;
+          -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out; }
+          .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .foto {
+            max-width: 160px;
+            max-height: 250px; }
+          .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about {
+            width: 100%;
+            background: #fff;
+            color: #004585;
+            padding: 20px 10px; }
+            .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about h3 {
+              font-family: interstatebold;
+              font-size: 1.8rem; }
+            .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about a {
+              font-size: 0.9rem;
+              color: #004585; }
+            .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about p {
+              margin-top: 3vh; }
+        .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame-enter {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+        .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame-enter-active {
+          opacity: 1; }
+  .kontaktformulär .inputBox {
+    padding: 3vh 3vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%; }
+    .kontaktformulär .inputBox input[type="text"], .kontaktformulär .inputBox select, .kontaktformulär .inputBox textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      margin: 10px 0; }
+    .kontaktformulär .inputBox button {
+      background: #004585;
+      color: #fff;
+      width: 15vw;
+      height: 6vh;
+      border-radius: 20px;
+      -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      font-size: 0.8rem;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+      margin-top: 3vh; }
+    .kontaktformulär .inputBox button:hover {
+      cursor: pointer;
+      -webkit-transform: scale(1.15);
+      transform: scale(1.15);
+      background: #0056a7; }
+
+.footer {
+  padding: 5vh 5vw;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  height: 100%;
+  width: 100%; }
+  .footer .kontakt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .footer .kontakt div h4 {
+      color: #729ed7; }
+    .footer .kontakt div ul li {
+      margin: 10px 0; }
+    .footer .kontakt div ul li a {
+      color: #fff; }
+    .footer .kontakt div ul li a:hover {
+      color: #729ed7; }
+
+/* UTBUD <-----<  */
+.btn {
+  font-size: 1.5rem;
+  height: 50px;
+  background: #fff;
+  color: #004585;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  padding: 10px; }
+
+.btn:hover {
+  color: #fff;
+  background: #004585;
+  cursor: pointer; }
+
+.utbud_wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 5vh 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); }
+  .utbud_wrapper .vitvaror_kategori {
+    width: 44vw;
+    height: 40vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3vh; }
+    .utbud_wrapper .vitvaror_kategori .textbox {
+      background: rgba(114, 158, 215, 0.5);
+      color: #fff;
+      padding: 1vh 1vw;
+      -webkit-transition: all 0.4s ease-in;
+      transition: all 0.4s ease-in;
+      height: 20%; }
+      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container {
+        display: none;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
+        will-change: opacity;
+        font-size: 0.8rem; }
+      .utbud_wrapper .vitvaror_kategori .textbox .fa-arrow-circle-up {
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
+        float: right; }
+      .utbud_wrapper .vitvaror_kategori .textbox h2 {
+        font-family: interstatebold;
+        font-size: 1.5rem;
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in; }
+      .utbud_wrapper .vitvaror_kategori .textbox h3 {
+        font-family: interstatebold;
+        font-size: 1rem;
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in; }
+      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container a {
+        color: #004585;
+        font-weight: bold; }
+      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container a:hover {
+        color: #fff; }
+      .utbud_wrapper .vitvaror_kategori .textbox .element-display {
+        display: block; }
+      .utbud_wrapper .vitvaror_kategori .textbox .element-display-active {
+        opacity: 1;
+        padding-top: 10px; }
+    .utbud_wrapper .vitvaror_kategori .hover-enter {
+      height: 60%; }
+      .utbud_wrapper .vitvaror_kategori .hover-enter h2 {
+        font-size: 2rem; }
+      .utbud_wrapper .vitvaror_kategori .hover-enter h3 {
+        font-size: 1.5rem; }
+      .utbud_wrapper .vitvaror_kategori .hover-enter .fa-arrow-circle-up {
+        font-size: 2rem;
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg); }
+    .utbud_wrapper .vitvaror_kategori .hover-active {
+      background: rgba(114, 158, 215, 0.7); }
+  .utbud_wrapper .hushållsapparater {
+    background-image: url("../img/espresso.jpeg");
+    margin-bottom: 5vh;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    height: 30vh; }
+    .utbud_wrapper .hushållsapparater .textbox_container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 1.2rem;
+      height: 100%; }
+      .utbud_wrapper .hushållsapparater .textbox_container ul li {
+        padding: 5px 5px; }
+  .utbud_wrapper .kök {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    background-image: url("../img/kök.jpg"); }
+    .utbud_wrapper .kök .textbox_container {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .utbud_wrapper .kök .textbox_container div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        padding: 10px;
+        width: 100%; }
+  .utbud_wrapper .värme {
+    height: 30vh;
+    background-image: url("../img/fire.jpg");
+    background-position: bottom;
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4; }
+    .utbud_wrapper .värme .textbox_container div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      width: 100%;
+      padding: 4px; }
+      .utbud_wrapper .värme .textbox_container div .btn {
+        font-size: 1.1rem;
+        height: 35px;
+        padding: 5px 10px; }
+  .utbud_wrapper .vitvaror {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    background-image: url("../img/ugn_disk.jpeg"); }
+    .utbud_wrapper .vitvaror .list_container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .utbud_wrapper .vitvaror .list_container ul {
+        padding-right: 5px; }
+
+/* OM OSS <--------< */
+.om_oss_wrap {
+  height: 100%;
+  width: 100%;
+  padding: 3vh 3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #fff; }
+  .om_oss_wrap .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    margin: 0; }
+    .om_oss_wrap .container .box {
+      height: 100%;
+      width: 100%;
+      padding: 3vh 6vw; }
+      .om_oss_wrap .container .box h1, .om_oss_wrap .container .box h2 {
+        color: #004585; }
+  .om_oss_wrap .carousel {
+    height: 100%;
+    width: 300px;
+    background: #fff; }
+    .om_oss_wrap .carousel div {
+      margin-right: 15px; }
+      .om_oss_wrap .carousel div img {
+        max-width: 250px;
+        height: 350px; }
+
+/* HITTA HIT <-------< */
+.hitta_hit_wrap {
+  padding: 3vh 3vw 10vh 3vw;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 1.5;
+  background: #F7F7F7; }
+  .hitta_hit_wrap .text_info {
+    height: 100%;
+    padding: 3vh 6vw; }
+    .hitta_hit_wrap .text_info h1, .hitta_hit_wrap .text_info i {
+      color: #004585; }
+  .hitta_hit_wrap .iframe_wrapper iframe {
+    height: 60vh;
+    width: 100%; }

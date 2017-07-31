@@ -21,7 +21,7 @@ $white: #fff;
 }
 
 @mixin boxshadow {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -55,6 +55,7 @@ a {
   text-decoration: none;
   transition: all 0.35s ease-in;
   outline: none;
+  cursor: pointer;
 }
 a:hover { color: $ltblue; }
 
@@ -71,7 +72,6 @@ a:hover { color: $ltblue; }
   height: 100%;
   display: flex;
   justify-content: space-between;
-  // background: linear-gradient(to left, $ltblue, $darkblue);
   background: $darkblue;
   .logo {
     text-align: center;
@@ -136,7 +136,6 @@ a:hover { color: $ltblue; }
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // padding: 10vh 0;
 
   div {
     display: flex;
@@ -168,8 +167,8 @@ a:hover { color: $ltblue; }
   flex-direction: column;
   align-self: center;
   text-align: center;
-  padding: 3vh 20vw;
-  margin-bottom: 3vh;
+  padding: 5vh 20vw;
+  line-height: 1.3;
   .intro {
     h1 {
       color: $darkblue;
@@ -191,7 +190,7 @@ a:hover { color: $ltblue; }
       li {
         font-size: 1.2rem;
         font-weight: bold;
-        margin: 3vh 3vw;
+        padding: 3vh 3vw;
         color: $blue;
         i {
           font-size: 5rem;
@@ -210,7 +209,6 @@ a:hover { color: $ltblue; }
   height: 40vh;
   justify-content: center;
   align-items: center;
-  margin: 3vh 0;
 
   .beskrivning {
     width: 50%;
@@ -250,10 +248,11 @@ a:hover { color: $ltblue; }
   height: 100%;
   display: flex;
   justify-content: space-around;
+  background: #f7f7f7;
+  padding: 10vh 0;
   .card {
     width: 30vw;
     height: 60vh;
-    margin-bottom: 3vh;
     @include flexCenter;
     flex-direction: column;
     text-align: center;
@@ -263,18 +262,20 @@ a:hover { color: $ltblue; }
     div {
       padding: 5%;
       background: rgba($darkblue, 0.6);
-
     }
   }
 
   .backlunda {
     background-image: url("../img/backlunda.jpg");
+    order: 2;
   }
   .creoform {
     background-image: url("../img/creoform.jpg");
+    order: 3;
     }
   .vitvaror_card {
     background-image: url("../img/vitt.jpg");
+    order: 1;
   }
 
 }
@@ -282,20 +283,28 @@ a:hover { color: $ltblue; }
 .kontaktformulär {
   width: 100%;
   height: 100%;
-  @include boxshadow;
-  background: $darkblue;
-  color: #fff;
+  background: white;
+  color: $darkblue;
   display: flex;
   justify-content: space-around;
 
   .kontaktinfo {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-size: 1rem;
     width: 100%;
     height: 100%;
     padding: 3vh 3vw;
+
+    .snabb_info {
+      background: #f7f7f7;
+      padding: 20px 5px;
+      font-weight: bold;
+      font-size: 16px;
+      p { padding: 5px; }
+      i { margin-right: 20px; }
+      margin-bottom: 3vh;
+    }
 
 
     .anställda_wrapper {
@@ -303,8 +312,8 @@ a:hover { color: $ltblue; }
       justify-content: space-around;
       align-items: center;
       width: 100%;
-      height: 100%;
-      padding: 3vh 0;
+      height: 250px;
+      margin-top: 3vh;
 
       .anställda {
         display: flex;
@@ -312,18 +321,20 @@ a:hover { color: $ltblue; }
         height: 100%;
         ul {
           align-self: flex-start;
+          line-height: 2;
           li {
             width: 100%;
-            margin: 2vh 0;
+            transition: all 0.3s ease-in;
+            margin-left: 0px;
           }
           li:hover{
             text-decoration: underline;
             color: $ltblue;
             cursor: pointer;
+            margin-left: 5px;
           }
           li i {
             margin-right: 1vw;
-            color: white;
           }
         }
       }
@@ -333,7 +344,6 @@ a:hover { color: $ltblue; }
         display: flex;
         width: 100%;
         height: 100%;
-        position: relative;
 
         .frame {
           width: 100%;
@@ -379,12 +389,12 @@ a:hover { color: $ltblue; }
     }
 
     button {
-      background: $darkred;
+      background: $darkblue;
       color: #fff;
       width: 15vw;
       height: 6vh;
       border-radius: 20px;
-      box-shadow: 2px 2px 5px black;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
       font-size: 0.8rem;
       transition: all 0.3s;
       margin-top: 3vh;
@@ -392,7 +402,7 @@ a:hover { color: $ltblue; }
     button:hover {
       cursor: pointer;
       transform: scale(1.15);
-      background: $red;
+      background: $blue;
     }
   }
 
@@ -417,7 +427,7 @@ a:hover { color: $ltblue; }
   }
 }
 
-/* UTBUD <-----<  */
+    /* UTBUD <-----<  */
 
 .btn {
   font-size: 1.5rem;
@@ -553,8 +563,9 @@ a:hover { color: $ltblue; }
 .om_oss_wrap {
   height: 100%;
   width: 100%;
-  padding: 5% 3vw;
+  padding: 3vh 3vw;
   display: flex;
+  align-items: center;
   background: #fff;
   .container {
     display: flex;
@@ -574,12 +585,37 @@ a:hover { color: $ltblue; }
   .carousel {
     height: 100%;
     width: 300px;
-
+    background: #fff;
     div {
-      padding: 10px;
+      margin-right: 15px;
       img {
         max-width: 250px;
+        height: 350px;
       }
+    }
+  }
+}
+
+/* HITTA HIT <-------< */
+
+.hitta_hit_wrap {
+  padding: 3vh 3vw 10vh 3vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  background: #F7F7F7;
+
+  .text_info {
+    height: 100%;
+    padding: 3vh 6vw;
+    h1, i { color: $darkblue; }
+  }
+  .iframe_wrapper {
+
+    iframe {
+      height: 60vh;
+      width: 100%;
     }
   }
 }
