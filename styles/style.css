@@ -321,9 +321,11 @@ a:hover {
 .footer {
   padding: 5vh 5vw;
   background: #2a2a2a;
-  color: white;
+  color: #fff;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  display: flex;
+  align-self: flex-end; }
   .footer .kontakt {
     display: flex;
     width: 100%;
@@ -360,9 +362,8 @@ a:hover {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: #fff;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); }
-  .utbud_wrapper .vitvaror_kategori {
+  background: #fff; }
+  .utbud_wrapper .kategori {
     width: 44vw;
     height: 40vh;
     display: flex;
@@ -371,53 +372,53 @@ a:hover {
     background-position: center;
     background-size: cover;
     margin-bottom: 3vh; }
-    .utbud_wrapper .vitvaror_kategori .textbox {
+    .utbud_wrapper .kategori .textbox {
       background: rgba(114, 158, 215, 0.5);
       color: #fff;
       padding: 1vh 1vw;
       transition: all 0.4s ease-in;
       height: 20%; }
-      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container {
+      .utbud_wrapper .kategori .textbox .textbox_container {
         display: none;
         opacity: 0;
         transition: all 0.4s ease-in;
         will-change: opacity;
-        font-size: 0.8rem; }
-      .utbud_wrapper .vitvaror_kategori .textbox .fa-arrow-circle-up {
+        font-size: 14px;
+        line-height: 1.3; }
+      .utbud_wrapper .kategori .textbox .fa-arrow-circle-up {
         transition: all 0.4s ease-in;
         float: right; }
-      .utbud_wrapper .vitvaror_kategori .textbox h2 {
+      .utbud_wrapper .kategori .textbox h2 {
         font-family: interstatebold;
         font-size: 1.5rem;
         transition: all 0.4s ease-in; }
-      .utbud_wrapper .vitvaror_kategori .textbox h3 {
+      .utbud_wrapper .kategori .textbox h3 {
         font-family: interstatebold;
         font-size: 1rem;
         transition: all 0.4s ease-in; }
-      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container a {
-        color: #004585;
+      .utbud_wrapper .kategori .textbox .textbox_container a {
+        color: #0056a7;
         font-weight: bold; }
-      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container a:hover {
+      .utbud_wrapper .kategori .textbox .textbox_container a:hover {
         color: #fff; }
-      .utbud_wrapper .vitvaror_kategori .textbox .element-display {
+      .utbud_wrapper .kategori .textbox .element-display {
         display: block; }
-      .utbud_wrapper .vitvaror_kategori .textbox .element-display-active {
+      .utbud_wrapper .kategori .textbox .element-display-active {
         opacity: 1;
         padding-top: 10px; }
-    .utbud_wrapper .vitvaror_kategori .hover-enter {
+    .utbud_wrapper .kategori .hover-enter {
       height: 60%; }
-      .utbud_wrapper .vitvaror_kategori .hover-enter h2 {
+      .utbud_wrapper .kategori .hover-enter h2 {
         font-size: 2rem; }
-      .utbud_wrapper .vitvaror_kategori .hover-enter h3 {
+      .utbud_wrapper .kategori .hover-enter h3 {
         font-size: 1.5rem; }
-      .utbud_wrapper .vitvaror_kategori .hover-enter .fa-arrow-circle-up {
+      .utbud_wrapper .kategori .hover-enter .fa-arrow-circle-up {
         font-size: 2rem;
         transform: rotate(-180deg); }
-    .utbud_wrapper .vitvaror_kategori .hover-active {
+    .utbud_wrapper .kategori .hover-active {
       background: rgba(114, 158, 215, 0.7); }
   .utbud_wrapper .hushållsapparater {
     background-image: url("../img/espresso.jpeg");
-    margin-bottom: 5vh;
     order: 3;
     height: 30vh; }
     .utbud_wrapper .hushållsapparater .textbox_container ul {
@@ -435,10 +436,12 @@ a:hover {
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .utbud_wrapper .kök .textbox_container div {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         padding: 10px;
         width: 100%; }
   .utbud_wrapper .värme {
