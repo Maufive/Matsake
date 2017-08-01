@@ -545,6 +545,7 @@ a:hover { color: $ltblue; }
     .textbox_container div {
       display: flex;
       justify-content: space-around;
+      align-items: center;
       width: 100%;
       padding: 4px;
       .btn { font-size: 1.1rem; height: 35px; padding: 5px 10px; }

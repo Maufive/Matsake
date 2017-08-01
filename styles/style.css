@@ -452,6 +452,7 @@ a:hover {
     .utbud_wrapper .värme .textbox_container div {
       display: flex;
       justify-content: space-around;
+      align-items: center;
       width: 100%;
       padding: 4px; }
       .utbud_wrapper .värme .textbox_container div .btn {
