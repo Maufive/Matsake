@@ -486,16 +486,10 @@ a:hover {
         color: #004585; }
   .om_oss_wrap .carousel {
     height: 100%;
-    width: 250px;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .om_oss_wrap .carousel div {
-      width: 250px; }
-      .om_oss_wrap .carousel div img {
-        max-width: 250px;
-        height: 350px; }
+    width: 252px;
+    background: #fff; }
+    .om_oss_wrap .carousel div img {
+      height: 350px; }
 
 /* HITTA HIT <-------< */
 .hitta_hit_wrap {

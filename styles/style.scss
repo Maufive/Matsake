@@ -585,13 +585,10 @@ a:hover { color: $ltblue; }
 
   .carousel {
     height: 100%;
-    width: 250px;
+    width: 252px;
     background: #fff;
-    @include flexCenter;
     div {
-      width: 250px;
       img {
-        max-width: 250px;
         height: 350px;
       }
     }
