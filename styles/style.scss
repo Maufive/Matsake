@@ -170,16 +170,15 @@ a:hover { color: $ltblue; }
   padding: 5vh 20vw;
   line-height: 1.3;
   .intro {
+    font-family: interstatebold;
     h1 {
       color: $darkblue;
-      font-family: interstatebold;
       font-size: 3rem;
     }
     h2 {
-      font-family: interstatebold;
       font-size: 2rem;
     }
-    p { font-size: 1.3rem; }
+    p { font-size: 1.5rem; }
   }
 
   .en_rad_med_ikoner {
@@ -235,6 +234,7 @@ a:hover { color: $ltblue; }
       display: flex;
       justify-content: space-around;
       align-items: center;
+      ul { line-height: 1.5; }
       ul li {
         padding: 5px 0;
       }
@@ -326,6 +326,7 @@ a:hover { color: $ltblue; }
             width: 100%;
             transition: all 0.3s ease-in;
             margin-left: 0px;
+            font-weight: bold;
           }
           li:hover{
             text-decoration: underline;
@@ -384,7 +385,7 @@ a:hover { color: $ltblue; }
       width: 100%;
       padding: 15px;
       border: 1px solid #ccc;
-      font-size: 1rem;
+      font-size: 14px;
       margin: 10px 0;
     }
 
@@ -393,7 +394,7 @@ a:hover { color: $ltblue; }
       color: #fff;
       width: 15vw;
       height: 6vh;
-      border-radius: 20px;
+      border-radius: 30px;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
       font-size: 0.8rem;
       transition: all 0.3s;
@@ -410,7 +411,7 @@ a:hover { color: $ltblue; }
 
 .footer {
   padding: 5vh 5vw;
-  background: rgba(0, 0, 0, 0.8);
+  background: #2a2a2a;
   color: white;
   height: 100%;
   width: 100%;
