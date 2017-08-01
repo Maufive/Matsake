@@ -589,6 +589,8 @@ a:hover { color: $ltblue; }
     background: #fff;
     div {
       margin-right: 15px;
+      border: 1px solid red;
+      width: 250px;
       img {
         max-width: 250px;
         height: 350px;
