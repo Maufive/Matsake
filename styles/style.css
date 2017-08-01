@@ -487,7 +487,10 @@ a:hover {
   .om_oss_wrap .carousel {
     height: 100%;
     width: 250px;
-    background: #fff; }
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .om_oss_wrap .carousel div {
       width: 250px; }
       .om_oss_wrap .carousel div img {
