@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   border: none;
-  font-family: interstateregular, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   list-style: none;
   box-sizing: border-box; }
 
@@ -412,7 +412,7 @@ a:hover {
       .utbud_wrapper .kategori .hover-enter h3 {
         font-size: 1.5em; }
       .utbud_wrapper .kategori .hover-enter .fa-arrow-circle-up {
-        font-size: 2rem;
+        font-size: 2em;
         transform: rotate(-180deg); }
     .utbud_wrapper .kategori .hover-active {
       background: rgba(114, 158, 215, 0.7); }
