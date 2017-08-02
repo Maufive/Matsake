@@ -15,7 +15,8 @@
   border: none;
   font-family: interstateregular, Helvetica, sans-serif;
   list-style: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
 
 a {
   color: #fff;
