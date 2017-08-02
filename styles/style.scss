@@ -48,7 +48,6 @@ $white: #fff;
   font-family: interstateregular, Helvetica, sans-serif;
   list-style: none;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -399,11 +398,13 @@ a:hover { color: $ltblue; }
       font-size: 0.8em;
       transition: all 0.3s;
       margin-top: 3vh;
+      -webkit-font-smoothing: antialiased;
     }
     button:hover {
       cursor: pointer;
       transform: scale(1.15);
       background: $blue;
+      -webkit-font-smoothing: antialiased;
     }
   }
 
@@ -495,7 +496,7 @@ a:hover { color: $ltblue; }
       h2 { font-size: 2em; }
       h3 { font-size: 1.5em; }
       .fa-arrow-circle-up {
-      font-size: 2em;
+      font-size: 2rem;
       transform: rotate(-180deg);
       }
     }
@@ -510,10 +511,11 @@ a:hover { color: $ltblue; }
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      font-size: 1.2em;
-      height: 100%;
+      justify-content: center;
+      font-size: 1.5em;
+      width: 100%;
       li {
-        padding: 5px 5px;
+        margin: 5px 10px;
       }
     }
   }
@@ -548,7 +550,6 @@ a:hover { color: $ltblue; }
       align-items: center;
       width: 100%;
       padding: 4px;
-      .btn { font-size: 1.1em; height: 35px; padding: 5px 10px; }
     }
    }
 

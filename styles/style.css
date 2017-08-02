@@ -15,8 +15,7 @@
   border: none;
   font-family: interstateregular, Helvetica, sans-serif;
   list-style: none;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased; }
+  box-sizing: border-box; }
 
 a {
   color: #fff;
@@ -312,11 +311,13 @@ a:hover {
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
       font-size: 0.8em;
       transition: all 0.3s;
-      margin-top: 3vh; }
+      margin-top: 3vh;
+      -webkit-font-smoothing: antialiased; }
     .kontaktformulär .inputBox button:hover {
       cursor: pointer;
       transform: scale(1.15);
-      background: #0056a7; }
+      background: #0056a7;
+      -webkit-font-smoothing: antialiased; }
 
 .footer {
   padding: 5vh 5vw;
@@ -413,7 +414,7 @@ a:hover {
       .utbud_wrapper .kategori .hover-enter h3 {
         font-size: 1.5em; }
       .utbud_wrapper .kategori .hover-enter .fa-arrow-circle-up {
-        font-size: 2em;
+        font-size: 2rem;
         transform: rotate(-180deg); }
     .utbud_wrapper .kategori .hover-active {
       background: rgba(114, 158, 215, 0.7); }
@@ -425,10 +426,11 @@ a:hover {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      font-size: 1.2em;
-      height: 100%; }
+      justify-content: center;
+      font-size: 1.5em;
+      width: 100%; }
       .utbud_wrapper .hushållsapparater .textbox_container ul li {
-        padding: 5px 5px; }
+        margin: 5px 10px; }
   .utbud_wrapper .kök {
     order: 2;
     background-image: url("../img/kök.jpg"); }
@@ -455,10 +457,6 @@ a:hover {
       align-items: center;
       width: 100%;
       padding: 4px; }
-      .utbud_wrapper .värme .textbox_container div .btn {
-        font-size: 1.1em;
-        height: 35px;
-        padding: 5px 10px; }
   .utbud_wrapper .vitvaror {
     order: 1;
     background-image: url("../img/ugn_disk.jpeg"); }
