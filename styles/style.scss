@@ -45,7 +45,7 @@ $white: #fff;
   margin: 0;
   padding: 0;
   border: none;
-  font-family: Helvetica, sans-serif;
+  font-family: interstateregular, Helvetica, sans-serif;
   list-style: none;
   box-sizing: border-box;
 }
@@ -384,7 +384,7 @@ a:hover { color: $ltblue; }
       width: 100%;
       padding: 15px;
       border: 1px solid #ccc;
-      font-size: 14px;
+      font-size: 1em;
       margin: 10px 0;
     }
 
