@@ -1,4 +1,10 @@
 @media only screen and (min-width: 1200px) {
+  * {
+    font-size: 1.2em;
+  }
+  .navbar .nav ul li { font-size: 2em; }
+
+  
   .textbox_container {
     line-height: 1.5;
   }
