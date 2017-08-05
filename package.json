@@ -1,0 +1,28 @@
+{
+  "name": "matsake",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maufive/Matsake.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maufive/Matsake/issues"
+  },
+  "homepage": "https://github.com/Maufive/Matsake#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-csslint": "^1.0.0",
+    "gulp-htmltidy": "^0.2.3"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}

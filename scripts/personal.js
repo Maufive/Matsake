@@ -4,7 +4,11 @@ $(document).ready(function(){
     infinite: true,
     autoplaySpeed: 3000,
     slidesToShow: 1,
+<<<<<<< HEAD
     centerMode: true,
+=======
+    centerMode: false,
+>>>>>>> gh-pages
     variableWidth: true,
     autoplay: true
   });
