@@ -1,7 +1,20 @@
 @charset "UTF-8";
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1601px) {
   .navbar .nav ul li {
     font-size: 2.8em; }
+
+  .om_oss {
+    padding: 5vh 25vw; }
+
+  .om_oss .intro h1 {
+    font-size: 5em; }
+  .om_oss .intro h2 {
+    font-size: 3em; }
+
+  .utbud_wrapper .kategori .textbox .textbox_container .btn {
+    font-size: 1.2rem;
+    height: 30px;
+    padding: 5px; }
 
   .textbox_container {
     line-height: 1.5; } }
@@ -98,20 +111,12 @@
     .header .navbar {
       display: none; }
 
-  .jumbotron h1 {
-    font-size: 1.4rem;
-    padding-left: 3vw; }
-  .jumbotron h3 {
-    font-size: 1.2rem;
-    padding-left: 3vw; }
-
   .om_oss {
     margin-bottom: 3vh;
     padding: 5vh 10vw; }
     .om_oss .intro {
       height: 100%; }
       .om_oss .intro h1 {
-        margin-bottom: 3vh;
         font-family: interstatebold; }
 
   .en_rad_med_ikoner {
@@ -169,25 +174,25 @@
     padding: 0;
     flex-direction: column;
     justify-content: flex-start; }
-    .utbud_wrapper .vitvaror_kategori {
+    .utbud_wrapper .kategori {
       width: 100%;
       height: 80vh;
       margin: 0;
       background-size: cover; }
-      .utbud_wrapper .vitvaror_kategori .textbox {
+      .utbud_wrapper .kategori .textbox {
         padding: 5vh 5vw; }
-        .utbud_wrapper .vitvaror_kategori .textbox h3 {
+        .utbud_wrapper .kategori .textbox h3 {
           font-size: 1.5rem; }
-        .utbud_wrapper .vitvaror_kategori .textbox .textbox_container {
+        .utbud_wrapper .kategori .textbox .textbox_container {
           font-size: 1rem; }
-      .utbud_wrapper .vitvaror_kategori .hover-enter {
+      .utbud_wrapper .kategori .hover-enter {
         height: 40%; }
-        .utbud_wrapper .vitvaror_kategori .hover-enter h3 {
+        .utbud_wrapper .kategori .hover-enter h3 {
           font-size: 2rem; }
     .utbud_wrapper .hushållsapparater {
       background-image: url("../img/espresso_liten.png"); }
-    .utbud_wrapper .värme {
-      /* ingen content atm */ }
+    .utbud_wrapper .värme .textbox .textbox_container div {
+      justify-content: space-between; }
     .utbud_wrapper .vitvaror {
       order: 0;
       background-image: url("../img/ugn_disk_liten.png"); }
