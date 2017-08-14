@@ -159,6 +159,31 @@
         width: 100%;
         padding: 20px 10px; }
 
+  .personal-container {
+    align-items: flex-start; }
+    .personal-container h2 {
+      padding-left: 3vw; }
+    .personal-container .personal-grid {
+      justify-content: space-around;
+      padding: 0; }
+      .personal-container .personal-grid .anställd {
+        width: 35%;
+        margin: 3vh; }
+
+  .bg-container {
+    padding: 0; }
+    .bg-container .kontakt-container {
+      width: 100%; }
+      .bg-container .kontakt-container .kontakt-wrap {
+        flex-direction: column; }
+        .bg-container .kontakt-container .kontakt-wrap .kontakt-text {
+          width: 100%;
+          margin-bottom: 3vh; }
+        .bg-container .kontakt-container .kontakt-wrap .kontakt-form {
+          width: 100%; }
+          .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox button {
+            width: 100%; }
+
   .kontaktformulär {
     flex-direction: column;
     height: 100%; }

@@ -265,6 +265,111 @@ a:hover { color: $ltblue; }
 
 }
 
+.personal-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 0;
+  align-items: center;
+  h2 { font-size: 2em; }
+
+  .personal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 3vh 6vw;
+
+    .anställd {
+      margin: 1vh 3vw;
+      width: 200px;
+      img {
+        max-width: 150px;
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+.bg-container {
+  background: #f7f7f7;
+  height: 100%;
+  width: 100%;
+  padding: 5vh 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .kontakt-container {
+    @include componentPadding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background: $darkblue;
+    width: 95%;
+    h2 { font-size: 2em; }
+
+    .kontakt-wrap {
+      @include componentPadding;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      .kontakt-text {
+        width: 40%;
+        height: 100%;
+        flex: 1;
+        line-height: 1.5;
+        padding: 0 3vw;
+        text-align: left;
+        font-size: 1.1rem;
+      }
+
+      .kontakt-form {
+        width: 40%;
+        height: 100%;
+        flex: 1;
+
+        .inputBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+
+          input[type="text"], select, textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            font-size: 0.8em;
+            margin: 5px 0;
+          }
+          button {
+            background: #fff;
+            color: #000;
+            width: 15vw;
+            height: 6vh;
+            border-radius: 30px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            font-size: 0.8em;
+            transition: all 0.3s;
+            margin-top: 3vh;
+            -webkit-font-smoothing: antialiased;
+          }
+          button:hover {
+            cursor: pointer;
+            transform: scale(1.15);
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+      }
+    }
+  }
+}
+
 .kontaktformulär {
   width: 100%;
   height: 100%;
