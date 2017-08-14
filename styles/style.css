@@ -340,7 +340,7 @@ a:hover {
   background: #fff;
   color: #004585;
   transition: all 0.4s ease-in;
-  padding: 10px; }
+  padding: 10px 20px; }
 
 .btn:hover {
   color: #fff;
@@ -377,6 +377,8 @@ a:hover {
         transition: all 0.4s ease-in;
         will-change: opacity;
         font-size: 14px; }
+        .utbud_wrapper .kategori .textbox .textbox_container div i {
+          margin-left: 10px; }
       .utbud_wrapper .kategori .textbox .fa-arrow-circle-up {
         transition: all 0.4s ease-in;
         float: right; }

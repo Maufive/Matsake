@@ -424,7 +424,7 @@ a:hover { color: $ltblue; }
   background: #fff;
   color: $darkblue;
   transition: all 0.4s ease-in;
-  padding: 10px;
+  padding: 10px 20px;
 }
 .btn:hover { color: #fff; background: $darkblue; cursor: pointer; }
 
@@ -461,6 +461,9 @@ a:hover { color: $ltblue; }
         transition: all 0.4s ease-in;
         will-change: opacity;
         font-size: 14px;
+        div i {
+          margin-left: 10px;
+        }
       }
       .fa-arrow-circle-up {
         transition: all 0.4s ease-in;

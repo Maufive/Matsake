@@ -21,7 +21,7 @@
 
   .textbox_container {
     line-height: 1.5; } }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 830px) {
   .header {
     margin: 0;
     padding: 20px 10px; }
@@ -51,7 +51,12 @@
         font-size: 1.5rem; }
 
   .kontaktformulär {
-    margin-bottom: 0; } }
+    flex-direction: column;
+    height: 100%; }
+    .kontaktformulär .kontaktinfo .anställda_wrapper {
+      display: none; }
+    .kontaktformulär .inputBox button {
+      width: 90%; } }
 @media only screen and (max-width: 768px) {
   .container {
     margin: 0; }
