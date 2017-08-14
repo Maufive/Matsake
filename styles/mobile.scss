@@ -19,13 +19,14 @@
     .kategori {
       .textbox {
         .textbox_container {
-          // font-size: 1rem;
+          font-size: 1em;
+          
+          ul { font-size: 1.3rem; }
 
-            // .btn {
-            //   font-size: 1.2rem;
-            //   height: 30px;
-            //   padding: 5px;
-            // }
+            .btn {
+              height: 100%;
+              padding: 15px;
+            }
         }
       }
     }
