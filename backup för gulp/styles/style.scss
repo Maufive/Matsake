@@ -1,0 +1,717 @@
+$darkblue: #004585;
+$blue: #0056a7;
+$ltblue: #729ed7;
+$yellow: #ffe000;
+$darkred: #ac000b;
+$red: #d4000f;
+$white: #fff;
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700');
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin componentPadding {
+  padding: 3vh 3vw;
+}
+
+@mixin  redBorder {
+  border: 1px solid red;
+}
+
+@mixin boxshadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+
+@font-face {
+    font-family: 'interstateregular';
+    src: url('fonts/interstate-regular-webfont.woff2') format('woff2'),
+         url('fonts/interstate-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'interstatebold';
+    src: url('fonts/interstate-bold-webfont.woff2') format('woff2'),
+         url('fonts/interstate-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  transition: all 0.35s ease-in;
+  outline: none;
+  cursor: pointer;
+}
+a:hover { color: $ltblue; }
+
+.container { margin: 3vh 0; }
+.active { color: #fff; }
+
+.header_wrapper {
+  @include boxshadow;
+}
+
+
+.header {
+  @include componentPadding;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: $darkblue;
+  .logo {
+    text-align: center;
+    h3 {
+      font-family: interstatebold, Helvetica;
+      font-size: 1.2em;
+      color: rgba(255, 255, 255, 0.9);
+      margin-right: 5px;
+    }
+    img {
+      max-height: 125px;
+      max-width: 200px;
+    }
+  }
+
+  .mobile_navbar { display: none; }
+
+  .navbar {
+    height: 10vh;
+    display: flex;
+    align-self: center;
+
+    .nav {
+      display: flex;
+      height: 100%;
+
+      ul {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        width: 100%;
+        height: 100%;
+
+        li {
+          transition: all 0.3s;
+          font-size: 1.5em;
+          padding: 5px 20px;
+          color: rgba($white, 0.8);
+        }
+
+        li:hover {
+          color: $white;
+          cursor: pointer;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+
+}
+
+.jumbotron {
+  width: 100vw;
+  height: 60vh;
+  background: url("../img/elon_butik.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.om_oss {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  padding: 5vh 20vw;
+  line-height: 1.5;
+  .intro {
+    font-family: interstatebold;
+    h1 {
+      color: $darkblue;
+      font-size: 3em; }
+    h2 { font-size: 2em; margin: 1vh 0 3vh 0; }
+
+    p { font-size: 1.5em; line-height: 1.5; }
+
+  }
+
+  .en_rad_med_ikoner {
+    width: 100%;
+    height: 100%;
+    .icon_row {
+      display: inline-flex;
+      li {
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 3vh 3vw;
+        color: $blue;
+        i {
+          font-size: 5em;
+          padding-top: 15px;
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+
+.info_wrapper {
+  @include componentPadding;
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+
+  .beskrivning {
+    width: 50%;
+    height: 100%;
+    @include flexCenter;
+    flex-direction: column;
+    a {
+      height: 100%;
+      width: 100%;
+      iframe {
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .öppettider {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $darkblue;
+    color: #fff;
+    h2 { text-align: center; }
+    .timetable {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      ul { line-height: 1.5; }
+      ul li {
+        padding: 5px 0;
+      }
+    }
+  }
+}
+
+.utbud {
+  @include componentPadding;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #f7f7f7;
+  padding: 10vh 0;
+  .card {
+    width: 30vw;
+    height: 60vh;
+    @include flexCenter;
+    flex-direction: column;
+    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    color: #fff;
+    div {
+      padding: 5%;
+      height: 45%;
+      background: rgba($darkblue, 0.6);
+      p { line-height: 1.5; }
+    }
+  }
+
+  .backlunda {
+    background-image: url("../img/backlunda.jpg");
+    order: 2;
+  }
+  .creoform {
+    background-image: url("../img/creoform.jpg");
+    order: 3;
+    }
+  .vitvaror_card {
+    background-image: url("../img/vitt.jpg");
+    order: 1;
+  }
+
+}
+
+.personal-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 0;
+  align-items: center;
+  h2 { font-size: 2em; }
+
+  .personal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 3vh 6vw;
+
+    .anställd {
+      margin: 1vh 3vw;
+      width: 200px;
+      img {
+        max-width: 150px;
+        max-height: 200px;
+      }
+    }
+  }
+}
+
+.bg-container {
+  background: #f7f7f7;
+  height: 100%;
+  width: 100%;
+  padding: 0vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .kontakt-container {
+    @include componentPadding;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background: $darkblue;
+    width: 100%;
+    h2 { font-size: 2em; }
+
+    .kontakt-wrap {
+      @include componentPadding;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: flex;
+      .kontakt-text {
+        width: 40%;
+        height: 100%;
+        flex: 1;
+        line-height: 1.5;
+        padding: 0 3vw;
+        text-align: left;
+        font-size: 1.1rem;
+      }
+
+      .kontakt-form {
+        width: 40%;
+        height: 100%;
+        flex: 1;
+
+        .inputBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+
+          input[type="text"], select, textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            font-size: 0.8em;
+            margin: 5px 0;
+          }
+          button {
+            background: #fff;
+            color: #000;
+            width: 15vw;
+            height: 6vh;
+            border-radius: 30px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            font-size: 0.8em;
+            transition: all 0.3s;
+            margin-top: 3vh;
+            -webkit-font-smoothing: antialiased;
+          }
+          button:hover {
+            cursor: pointer;
+            transform: scale(1.15);
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+      }
+    }
+  }
+}
+
+.kontaktformulär {
+  width: 100%;
+  height: 100%;
+  background: white;
+  color: $darkblue;
+  display: flex;
+  justify-content: space-around;
+
+  .kontaktinfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 3vh 3vw;
+
+    .snabb_info {
+      background: #f7f7f7;
+      padding: 20px 5px;
+      font-weight: bold;
+      font-size: 1em;
+      p { padding: 5px; }
+      i { margin-right: 20px; }
+      margin-bottom: 3vh;
+    }
+
+
+    .anställda_wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 250px;
+      margin-top: 3vh;
+
+      .anställda {
+        display: flex;
+        flex: 1;
+        height: 100%;
+        ul {
+          align-self: flex-start;
+          line-height: 2;
+          li {
+            width: 100%;
+            transition: all 0.3s ease-in;
+            margin-left: 0px;
+            font-weight: bold;
+          }
+          li:hover{
+            text-decoration: underline;
+            color: $ltblue;
+            cursor: pointer;
+            margin-left: 5px;
+          }
+          li i {
+            margin-right: 1vw;
+          }
+        }
+      }
+
+      .inforuta {
+        flex: 2;
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        .frame {
+          width: 100%;
+          display: none;
+          opacity: 0;
+          background: #fff;
+          will-change: opacity;
+          transition: all 0.4s ease-in-out;
+
+          .foto {
+            max-width: 160px;
+            max-height: 250px;
+          }
+          .about {
+            width: 100%;
+            background: #fff;
+            color: $darkblue;
+            padding: 20px 10px;
+            h3 { font-family: interstatebold; font-size: 1.8em; }
+            a { font-size: 0.9em; color: $darkblue; }
+            p { margin-top: 3vh; }
+          }
+        }
+        .frame-enter  { display: flex; }
+        .frame-enter-active  { opacity: 1; }
+      }
+    }
+  }
+
+  .inputBox {
+    @include componentPadding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    input[type="text"], select, textarea {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+      margin: 10px 0;
+    }
+
+    button {
+      background: $darkblue;
+      color: #fff;
+      width: 15vw;
+      height: 6vh;
+      border-radius: 30px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      font-size: 0.8em;
+      transition: all 0.3s;
+      margin-top: 3vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    button:hover {
+      cursor: pointer;
+      transform: scale(1.15);
+      background: $blue;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+}
+
+.footer {
+  padding: 5vh 5vw;
+  background: #2a2a2a;
+  color: #fff;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+
+  .kontakt {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    div h4 { color: $ltblue; }
+    div ul li { margin: 10px 0; }
+    div ul li a { color: #fff; }
+    div ul li a:hover { color: $ltblue; }
+  }
+}
+
+    /* UTBUD <-----<  */
+
+.btn {
+  font-size: 1.5em;
+  height: 50px;
+  background: #fff;
+  color: $darkblue;
+  transition: all 0.4s ease-in;
+  padding: 10px 20px;
+}
+.btn:hover { color: #fff; background: $darkblue; cursor: pointer; }
+
+.utbud_wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 5vh 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff;
+
+  .kategori {
+    width: 44vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 3vh;
+
+    .textbox {
+      background: rgba($ltblue, 0.5);
+      color: #fff;
+      padding: 1vh 1vw;
+      transition: all 0.4s ease-in;
+      height: 20%;
+
+      .textbox_container {
+        display: none;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+        will-change: opacity;
+        font-size: 14px;
+        div i {
+          margin-left: 10px;
+        }
+      }
+      .fa-arrow-circle-up {
+        transition: all 0.4s ease-in;
+        float: right;
+      }
+      h2 { font-family: interstatebold; font-size: 1.5em; transition: all 0.4s ease-in; }
+      h3 { font-family: interstatebold; font-size: 1em; transition: all 0.4s ease-in;  }
+      .textbox_container a { color: $blue; font-weight: bold; }
+      .textbox_container a:hover { color: #fff; }
+
+      .element-display { display: block; }
+      .element-display-active { opacity: 1; padding-top: 10px; }
+    }
+
+    .hover-enter {
+      height: 70%;
+      h2 { font-size: 2em; }
+      h3 { font-size: 1.5em; }
+      .fa-arrow-circle-up {
+      font-size: 2rem;
+      transform: rotate(-180deg);
+      }
+    }
+    .hover-active { background: rgba($ltblue, 0.7); }
+  }
+
+  .hushållsapparater {
+    background-image: url("../img/espresso.jpeg");
+    order: 3;
+    height: 30vh;
+    .textbox_container ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      width: 100%;
+      li {
+        margin: 5px 10px;
+      }
+    }
+  }
+
+  .kök {
+    order: 2;
+    background-image: url("../img/kök.jpg");
+     .textbox_container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+      }
+    }
+  }
+
+  .värme {
+    height: 30vh;
+    background-image: url("../img/fire.jpg");
+    background-position: bottom;
+    order: 4;
+    .textbox_container div {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      padding: 30px 0;
+    }
+   }
+
+  .vitvaror {
+    order: 1;
+    background-image: url("../img/ugn_disk.jpeg");
+    .list_container {
+      display: flex;
+      justify-content: space-around;
+      ul { padding-right: 5px; }
+    }
+   }
+}
+
+/* OM OSS <--------< */
+
+.om_oss_wrap {
+  height: 100%;
+  width: 100%;
+  padding: 3vh 3vw;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    margin: 0;
+    .box {
+      height: 100%;
+      width: 100%;
+      padding: 3vh 6vw;
+      line-height: 1.5;
+      h1, h2 { color: $darkblue; }
+    }
+  }
+
+  .carousel {
+    height: 100%;
+    width: 252px;
+    background: #fff;
+    div {
+      img {
+        height: 350px;
+      }
+    }
+  }
+}
+
+/* HITTA HIT <-------< */
+
+.hitta_hit_wrap {
+  padding: 3vh 3vw 10vh 3vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  background: #F7F7F7;
+
+  .text_info {
+    height: 100%;
+    padding: 3vh 6vw;
+    h1, i { color: $darkblue; }
+  }
+  .iframe_wrapper {
+
+    iframe {
+      height: 60vh;
+      width: 100%;
+    }
+  }
+}

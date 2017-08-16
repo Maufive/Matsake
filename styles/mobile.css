@@ -30,8 +30,7 @@
 
   .jumbotron {
     height: 350px;
-    padding-left: 0;
-    margin-bottom: 3vh; }
+    padding-left: 0; }
     .jumbotron h1 {
       font-size: 1.6rem; }
     .jumbotron h3 {
@@ -77,8 +76,8 @@
         border-radius: 10px;
         position: relative; }
         .header .mobile_navbar .mobile_nav .dropdown {
-          height: 50vh;
-          width: 50vw;
+          height: 35vh;
+          width: 40vw;
           right: 0%;
           top: 150%;
           background: #fff;
@@ -96,10 +95,10 @@
             justify-content: space-around;
             width: 100%;
             height: 100%;
-            padding: 20px;
+            padding: 10px;
             text-align: center; }
             .header .mobile_navbar .mobile_nav .dropdown ul li {
-              font-size: 2rem; }
+              font-size: 1.6rem; }
           .header .mobile_navbar .mobile_nav .dropdown ul li a {
             color: #729ed7; }
           .header .mobile_navbar .mobile_nav .dropdown .arrow {
@@ -120,12 +119,10 @@
       display: none; }
 
   .om_oss {
-    margin-bottom: 3vh;
-    padding: 5vh 10vw; }
-    .om_oss .intro {
-      height: 100%; }
-      .om_oss .intro h1 {
-        font-family: interstatebold; }
+    padding: 5vh 5vw; }
+    .om_oss .intro h1 {
+      font-size: 4rem;
+      font-family: interstatebold; }
 
   .en_rad_med_ikoner {
     display: none; }
@@ -137,16 +134,21 @@
     flex-direction: column;
     height: 60vh;
     width: 100%;
-    margin: 0;
+    margin: 0 0 3vh 0;
     padding: 0; }
     .info_wrapper .beskrivning {
       width: 100vw;
       padding: 0;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      flex: 1; }
       .info_wrapper .beskrivning h3 {
         font-weight: bold;
         margin-bottom: 1vh; }
+      .info_wrapper .beskrivning a {
+        max-height: 30vh; }
     .info_wrapper .öppettider {
+      height: 100%;
+      flex: 1;
       width: 100vw;
       padding: 20px 0; }
 
@@ -171,7 +173,8 @@
         margin: 3vh; }
 
   .bg-container {
-    padding: 0; }
+    padding: 0;
+    height: 112vh; }
     .bg-container .kontakt-container {
       width: 100%; }
       .bg-container .kontakt-container .kontakt-wrap {
@@ -225,7 +228,11 @@
     .utbud_wrapper .hushållsapparater {
       background-image: url("../img/espresso_liten.png"); }
     .utbud_wrapper .värme .textbox .textbox_container div {
-      justify-content: space-between; }
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0; }
+      .utbud_wrapper .värme .textbox .textbox_container div a {
+        margin: 1vh 0; }
     .utbud_wrapper .vitvaror {
       order: 0;
       background-image: url("../img/ugn_disk_liten.png"); }
@@ -242,6 +249,12 @@
       width: 100%;
       padding: 0; }
     .om_oss_wrap .carousel {
-      display: none; } }
+      display: none; }
+
+  .media_wrap {
+    padding: 5vh 0;
+    text-align: center; }
+    .media_wrap .media_info {
+      padding: 0; } }
 
 /*# sourceMappingURL=mobile.css.map */

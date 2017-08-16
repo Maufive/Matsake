@@ -1,0 +1,327 @@
+@media only screen and (min-width: 1601px) {
+
+  // Förstasidan <-------------
+
+  .navbar .nav ul li { font-size: 2.8em; }
+
+  .om_oss { padding: 5vh 25vw; }
+  .om_oss .intro {
+    h1 { font-size: 5em; }
+    h2 { font-size: 3em; }
+  }
+
+  // Slut på förstasidan <-----------
+
+  // Utbud.html <----------
+
+
+  .utbud_wrapper {
+    .kategori {
+      .textbox {
+        .textbox_container {
+          font-size: 1em;
+
+          ul { font-size: 1.3rem; }
+
+          .btn {
+            height: 100%;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  // Slut på utbud.html <--------
+
+  .textbox_container {
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .header {
+    margin: 0;
+    padding: 20px 10px;
+
+    .navbar .nav ul li {
+      font-size: 1.3rem;
+    }
+  }
+
+  .jumbotron {
+    height: 350px;
+    padding-left: 0;
+
+    h1 { font-size: 1.6rem; }
+    h3 { font-size: 1.3rem; }
+  }
+
+  .intro {
+    padding: 0;
+    height: 30vh;
+   }
+
+  .utbud {
+    padding: 0;
+    justify-content: space-between;
+    .card {
+      margin-bottom: 0;
+      width: 100%;
+      h1 { font-size: 1.5rem; }
+    }
+  }
+
+  .kontaktformulär {
+    flex-direction: column;
+    height: 100%;
+    .kontaktinfo .anställda_wrapper {
+      display: none;
+    }
+    .inputBox button {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container { margin: 0; }
+  .header {
+    margin-bottom: 0;
+
+    .mobile_navbar {
+      display: flex;
+      align-items: center;
+      .mobile_nav {
+        background: #fff;
+        color: #004585;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        position: relative;
+        .dropdown {
+          height: 35vh;
+          width: 40vw;
+          right: 0%;
+          top: 150%;
+          background: #fff;
+          position: absolute;
+          z-index: 5;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+          display: none;
+          opacity: 0;
+          will-change: opacity;
+          transition: all 0.2s ease-in;
+
+          ul {
+            border: 1px solid #ccc;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+
+            li { font-size: 1.5rem; }
+          }
+
+          ul li a { color: #729ed7; }
+
+          .arrow {
+            position: absolute;
+            right: 7%;
+            width: 25px;
+            height: 25px;
+            display: block;
+            background:white;
+            transform: translateY(-50%) rotate(45deg);
+          }
+        }
+        .dropdown-enter { display: block; }
+        .dropdown-enter-active { opacity: 1; }
+      }
+      .mobile_nav:hover { cursor: pointer; }
+    }
+
+    .navbar {
+      display: none;
+      }
+    }
+
+    .om_oss {
+      margin-bottom: 3vh;
+      padding: 3vh 5vw;
+      .intro {
+        height: 100%;
+        h1 { font-size: 4rem; font-family: interstatebold; }
+      }
+    }
+
+    .en_rad_med_ikoner {
+      display: none;
+
+      .icon_row {
+        flex-direction: column;
+        height: 100%;
+      }
+    }
+
+  .info_wrapper {
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    .beskrivning {
+      width: 100vw;
+      padding: 0;
+      margin-bottom: 0;
+      h3 {
+        font-weight: bold;
+        margin-bottom: 1vh;
+      }
+    }
+    .öppettider {
+      width: 100vw;
+      padding: 20px 0;
+    }
+  }
+
+  .utbud {
+    flex-direction: column;
+    .card {
+      width: 100%;
+      margin-bottom: 3vh;
+      div {
+        width: 100%;
+        padding: 20px 10px;
+      }
+    }
+  }
+
+  .personal-container {
+    align-items: flex-start;
+    h2 { padding-left: 3vw; }
+
+    .personal-grid {
+      justify-content: space-around;
+      padding: 0;
+      .anställd {
+        width: 35%;
+        margin: 3vh;
+      }
+    }
+  }
+
+  .bg-container {
+    padding: 0;
+    .kontakt-container {
+      width: 100%;
+      .kontakt-wrap {
+        flex-direction: column;
+        .kontakt-text {
+          width: 100%;
+          margin-bottom: 3vh;
+        }
+        .kontakt-form {
+          width: 100%;
+          .inputBox {
+            button {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .kontaktformulär {
+    flex-direction: column;
+    height: 100%;
+    .kontaktinfo .anställda_wrapper {
+      display: none;
+    }
+    .inputBox button {
+      width: 90%;
+    }
+  }
+
+  .footer {
+    height: 100%;
+    .kontakt {
+      height: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+
+      div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+
+
+  // UTBUD SEKTION // -------------------------------
+  .utbud_wrapper {
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    .kategori {
+      width: 100%;
+      height: 80vh;
+      margin: 0;
+      background-size: cover;
+
+      .textbox {
+        padding: 5vh 5vw;
+        h3 { font-size: 1.5rem; }
+        .textbox_container {
+          font-size: 1rem;
+        }
+      }
+      .hover-enter {
+        height: 40%;
+        h3 { font-size: 2rem; }
+      }
+    }
+    .hushållsapparater { background-image: url("../img/espresso_liten.png"); }
+
+    .värme {
+      .textbox .textbox_container div {
+        justify-content: space-between;
+      }
+    }
+
+    .vitvaror {
+      order: 0;
+      background-image: url("../img/ugn_disk_liten.png");
+      .textbox .textbox_container > ul > li {
+        margin: 10px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+
+  .om_oss_wrap {
+    width: 100%;
+    .container {
+      padding: 0;
+      width: 100%;
+    }
+    .box {
+      width: 100%;
+      padding: 0;
+    }
+    .carousel {
+      display: none;
+    }
+  }
+}

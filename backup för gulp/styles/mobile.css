@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@media only screen and (min-width: 1601px) {
+  .navbar .nav ul li {
+    font-size: 2.8em; }
+
+  .om_oss {
+    padding: 5vh 25vw; }
+
+  .om_oss .intro h1 {
+    font-size: 5em; }
+  .om_oss .intro h2 {
+    font-size: 3em; }
+
+  .utbud_wrapper .kategori .textbox .textbox_container {
+    font-size: 1em; }
+    .utbud_wrapper .kategori .textbox .textbox_container ul {
+      font-size: 1.3rem; }
+    .utbud_wrapper .kategori .textbox .textbox_container .btn {
+      height: 100%;
+      padding: 15px; }
+
+  .textbox_container {
+    line-height: 1.5; } }
+@media only screen and (max-width: 830px) {
+  .header {
+    margin: 0;
+    padding: 20px 10px; }
+    .header .navbar .nav ul li {
+      font-size: 1.3rem; }
+
+  .jumbotron {
+    height: 350px;
+    padding-left: 0; }
+    .jumbotron h1 {
+      font-size: 1.6rem; }
+    .jumbotron h3 {
+      font-size: 1.3rem; }
+
+  .intro {
+    padding: 0;
+    height: 30vh; }
+
+  .utbud {
+    padding: 0;
+    justify-content: space-between; }
+    .utbud .card {
+      margin-bottom: 0;
+      width: 100%; }
+      .utbud .card h1 {
+        font-size: 1.5rem; }
+
+  .kontaktformulär {
+    flex-direction: column;
+    height: 100%; }
+    .kontaktformulär .kontaktinfo .anställda_wrapper {
+      display: none; }
+    .kontaktformulär .inputBox button {
+      width: 90%; } }
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0; }
+
+  .header {
+    margin-bottom: 0; }
+    .header .mobile_navbar {
+      display: flex;
+      align-items: center; }
+      .header .mobile_navbar .mobile_nav {
+        background: #fff;
+        color: #004585;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        position: relative; }
+        .header .mobile_navbar .mobile_nav .dropdown {
+          height: 35vh;
+          width: 40vw;
+          right: 0%;
+          top: 150%;
+          background: #fff;
+          position: absolute;
+          z-index: 5;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+          display: none;
+          opacity: 0;
+          will-change: opacity;
+          transition: all 0.2s ease-in; }
+          .header .mobile_navbar .mobile_nav .dropdown ul {
+            border: 1px solid #ccc;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            text-align: center; }
+            .header .mobile_navbar .mobile_nav .dropdown ul li {
+              font-size: 1.5rem; }
+          .header .mobile_navbar .mobile_nav .dropdown ul li a {
+            color: #729ed7; }
+          .header .mobile_navbar .mobile_nav .dropdown .arrow {
+            position: absolute;
+            right: 7%;
+            width: 25px;
+            height: 25px;
+            display: block;
+            background: white;
+            transform: translateY(-50%) rotate(45deg); }
+        .header .mobile_navbar .mobile_nav .dropdown-enter {
+          display: block; }
+        .header .mobile_navbar .mobile_nav .dropdown-enter-active {
+          opacity: 1; }
+      .header .mobile_navbar .mobile_nav:hover {
+        cursor: pointer; }
+    .header .navbar {
+      display: none; }
+
+  .om_oss {
+    margin-bottom: 3vh;
+    padding: 3vh 5vw; }
+    .om_oss .intro {
+      height: 100%; }
+      .om_oss .intro h1 {
+        font-size: 4rem;
+        font-family: interstatebold; }
+
+  .en_rad_med_ikoner {
+    display: none; }
+    .en_rad_med_ikoner .icon_row {
+      flex-direction: column;
+      height: 100%; }
+
+  .info_wrapper {
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+    .info_wrapper .beskrivning {
+      width: 100vw;
+      padding: 0;
+      margin-bottom: 0; }
+      .info_wrapper .beskrivning h3 {
+        font-weight: bold;
+        margin-bottom: 1vh; }
+    .info_wrapper .öppettider {
+      width: 100vw;
+      padding: 20px 0; }
+
+  .utbud {
+    flex-direction: column; }
+    .utbud .card {
+      width: 100%;
+      margin-bottom: 3vh; }
+      .utbud .card div {
+        width: 100%;
+        padding: 20px 10px; }
+
+  .personal-container {
+    align-items: flex-start; }
+    .personal-container h2 {
+      padding-left: 3vw; }
+    .personal-container .personal-grid {
+      justify-content: space-around;
+      padding: 0; }
+      .personal-container .personal-grid .anställd {
+        width: 35%;
+        margin: 3vh; }
+
+  .bg-container {
+    padding: 0; }
+    .bg-container .kontakt-container {
+      width: 100%; }
+      .bg-container .kontakt-container .kontakt-wrap {
+        flex-direction: column; }
+        .bg-container .kontakt-container .kontakt-wrap .kontakt-text {
+          width: 100%;
+          margin-bottom: 3vh; }
+        .bg-container .kontakt-container .kontakt-wrap .kontakt-form {
+          width: 100%; }
+          .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox button {
+            width: 100%; }
+
+  .kontaktformulär {
+    flex-direction: column;
+    height: 100%; }
+    .kontaktformulär .kontaktinfo .anställda_wrapper {
+      display: none; }
+    .kontaktformulär .inputBox button {
+      width: 90%; }
+
+  .footer {
+    height: 100%; }
+    .footer .kontakt {
+      height: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start; }
+      .footer .kontakt div {
+        width: 50%;
+        display: flex;
+        flex-direction: column; }
+
+  .utbud_wrapper {
+    padding: 0;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .utbud_wrapper .kategori {
+      width: 100%;
+      height: 80vh;
+      margin: 0;
+      background-size: cover; }
+      .utbud_wrapper .kategori .textbox {
+        padding: 5vh 5vw; }
+        .utbud_wrapper .kategori .textbox h3 {
+          font-size: 1.5rem; }
+        .utbud_wrapper .kategori .textbox .textbox_container {
+          font-size: 1rem; }
+      .utbud_wrapper .kategori .hover-enter {
+        height: 40%; }
+        .utbud_wrapper .kategori .hover-enter h3 {
+          font-size: 2rem; }
+    .utbud_wrapper .hushållsapparater {
+      background-image: url("../img/espresso_liten.png"); }
+    .utbud_wrapper .värme .textbox .textbox_container div {
+      justify-content: space-between; }
+    .utbud_wrapper .vitvaror {
+      order: 0;
+      background-image: url("../img/ugn_disk_liten.png"); }
+      .utbud_wrapper .vitvaror .textbox .textbox_container > ul > li {
+        margin: 10px;
+        font-size: 1.5rem; }
+
+  .om_oss_wrap {
+    width: 100%; }
+    .om_oss_wrap .container {
+      padding: 0;
+      width: 100%; }
+    .om_oss_wrap .box {
+      width: 100%;
+      padding: 0; }
+    .om_oss_wrap .carousel {
+      display: none; } }
+
+/*# sourceMappingURL=mobile.css.map */

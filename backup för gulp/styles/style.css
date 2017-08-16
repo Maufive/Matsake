@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700");
 @font-face {
   font-family: 'interstateregular';
   src: url("fonts/interstate-regular-webfont.woff2") format("woff2"), url("fonts/interstate-regular-webfont.woff") format("woff");
@@ -13,15 +14,13 @@
   margin: 0;
   padding: 0;
   border: none;
-  font-family: interstateregular, Helvetica, sans-serif;
+  font-family: 'Roboto', Helvetica, sans-serif;
   list-style: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 a {
   color: #fff;
   text-decoration: none;
-  -webkit-transition: all 0.35s ease-in;
   transition: all 0.35s ease-in;
   outline: none;
   cursor: pointer; }
@@ -36,24 +35,19 @@ a:hover {
   color: #fff; }
 
 .header_wrapper {
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); }
 
 .header {
   padding: 3vh 3vw;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   background: #004585; }
   .header .logo {
     text-align: center; }
     .header .logo h3 {
       font-family: interstatebold, Helvetica;
-      font-size: 1.2rem;
+      font-size: 1.2em;
       color: rgba(255, 255, 255, 0.9);
       margin-right: 5px; }
     .header .logo img {
@@ -63,32 +57,21 @@ a:hover {
     display: none; }
   .header .navbar {
     height: 10vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
     align-self: center; }
     .header .navbar .nav {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       height: 100%; }
       .header .navbar .nav ul {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
         display: inline-flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
-        -ms-flex-pack: distribute;
         justify-content: space-around;
         list-style: none;
         width: 100%;
         height: 100%; }
         .header .navbar .nav ul li {
-          -webkit-transition: all 0.3s;
           transition: all 0.3s;
-          font-size: 1.5rem;
+          font-size: 1.5em;
           padding: 5px 20px;
           color: rgba(255, 255, 255, 0.8); }
         .header .navbar .nav ul li:hover {
@@ -103,146 +86,83 @@ a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
-  .jumbotron div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.6);
-    padding: 15px 10px;
-    border-radius: 0px; }
-    .jumbotron div h1 {
-      font-family: interstatebold;
-      font-weight: bold;
-      font-size: 2rem;
-      color: black; }
-    .jumbotron div h3 {
-      font-weight: normal;
-      font-size: 1.5rem;
-      color: black; }
 
 .om_oss {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -ms-flex-item-align: center;
   align-self: center;
   text-align: center;
   padding: 5vh 20vw;
-  line-height: 1.3; }
-  .om_oss .intro h1 {
-    color: #004585;
-    font-family: interstatebold;
-    font-size: 3rem; }
-  .om_oss .intro h2 {
-    font-family: interstatebold;
-    font-size: 2rem; }
-  .om_oss .intro p {
-    font-size: 1.3rem; }
+  line-height: 1.5; }
+  .om_oss .intro {
+    font-family: interstatebold; }
+    .om_oss .intro h1 {
+      color: #004585;
+      font-size: 3em; }
+    .om_oss .intro h2 {
+      font-size: 2em;
+      margin: 1vh 0 3vh 0; }
+    .om_oss .intro p {
+      font-size: 1.5em;
+      line-height: 1.5; }
   .om_oss .en_rad_med_ikoner {
     width: 100%;
     height: 100%; }
     .om_oss .en_rad_med_ikoner .icon_row {
-      display: -webkit-inline-box;
-      display: -ms-inline-flexbox;
       display: inline-flex; }
       .om_oss .en_rad_med_ikoner .icon_row li {
-        font-size: 1.2rem;
+        font-size: 1.2em;
         font-weight: bold;
         padding: 3vh 3vw;
         color: #0056a7; }
         .om_oss .en_rad_med_ikoner .icon_row li i {
-          font-size: 5rem;
+          font-size: 5em;
           padding-top: 15px;
           color: #0056a7; }
 
 .info_wrapper {
   padding: 3vh 3vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 40vh;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center; }
   .info_wrapper .beskrivning {
     width: 50%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column; }
-    .info_wrapper .beskrivning iframe {
-      width: 100%;
+    .info_wrapper .beskrivning a {
       height: 100%;
-      pointer-events: none; }
+      width: 100%; }
+      .info_wrapper .beskrivning a iframe {
+        width: 100%;
+        height: 100%;
+        pointer-events: none; }
   .info_wrapper .öppettider {
     width: 50%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     background: #004585;
     color: #fff; }
     .info_wrapper .öppettider h2 {
       text-align: center; }
     .info_wrapper .öppettider .timetable {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
       justify-content: space-around;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center; }
+      .info_wrapper .öppettider .timetable ul {
+        line-height: 1.5; }
       .info_wrapper .öppettider .timetable ul li {
         padding: 5px 0; }
 
@@ -250,28 +170,16 @@ a:hover {
   padding: 3vh 3vw;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   background: #f7f7f7;
   padding: 10vh 0; }
   .utbud .card {
     width: 30vw;
     height: 60vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     text-align: center;
     overflow: hidden;
@@ -279,74 +187,149 @@ a:hover {
     color: #fff; }
     .utbud .card div {
       padding: 5%;
+      height: 45%;
       background: rgba(0, 69, 133, 0.6); }
+      .utbud .card div p {
+        line-height: 1.5; }
   .utbud .backlunda {
     background-image: url("../img/backlunda.jpg");
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2; }
   .utbud .creoform {
     background-image: url("../img/creoform.jpg");
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
     order: 3; }
   .utbud .vitvaror_card {
     background-image: url("../img/vitt.jpg");
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1; }
+
+.personal-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 0;
+  align-items: center; }
+  .personal-container h2 {
+    font-size: 2em; }
+  .personal-container .personal-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 3vh 6vw; }
+    .personal-container .personal-grid .anställd {
+      margin: 1vh 3vw;
+      width: 200px; }
+      .personal-container .personal-grid .anställd img {
+        max-width: 150px;
+        max-height: 200px; }
+
+.bg-container {
+  background: #f7f7f7;
+  height: 100%;
+  width: 100%;
+  padding: 0vh 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .bg-container .kontakt-container {
+    padding: 3vh 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background: #004585;
+    width: 100%; }
+    .bg-container .kontakt-container h2 {
+      font-size: 2em; }
+    .bg-container .kontakt-container .kontakt-wrap {
+      padding: 3vh 3vw;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      display: flex; }
+      .bg-container .kontakt-container .kontakt-wrap .kontakt-text {
+        width: 40%;
+        height: 100%;
+        flex: 1;
+        line-height: 1.5;
+        padding: 0 3vw;
+        text-align: left;
+        font-size: 1.1rem; }
+      .bg-container .kontakt-container .kontakt-wrap .kontakt-form {
+        width: 40%;
+        height: 100%;
+        flex: 1; }
+        .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%; }
+          .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox input[type="text"], .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox select, .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            font-size: 0.8em;
+            margin: 5px 0; }
+          .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox button {
+            background: #fff;
+            color: #000;
+            width: 15vw;
+            height: 6vh;
+            border-radius: 30px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            font-size: 0.8em;
+            transition: all 0.3s;
+            margin-top: 3vh;
+            -webkit-font-smoothing: antialiased; }
+          .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox button:hover {
+            cursor: pointer;
+            transform: scale(1.15);
+            -webkit-font-smoothing: antialiased; }
 
 .kontaktformulär {
   width: 100%;
   height: 100%;
   background: white;
   color: #004585;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around; }
   .kontaktformulär .kontaktinfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    font-size: 1rem;
     width: 100%;
     height: 100%;
     padding: 3vh 3vw; }
+    .kontaktformulär .kontaktinfo .snabb_info {
+      background: #f7f7f7;
+      padding: 20px 5px;
+      font-weight: bold;
+      font-size: 1em;
+      margin-bottom: 3vh; }
+      .kontaktformulär .kontaktinfo .snabb_info p {
+        padding: 5px; }
+      .kontaktformulär .kontaktinfo .snabb_info i {
+        margin-right: 20px; }
     .kontaktformulär .kontaktinfo .anställda_wrapper {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
       justify-content: space-around;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
       width: 100%;
       height: 250px;
       margin-top: 3vh; }
       .kontaktformulär .kontaktinfo .anställda_wrapper .anställda {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
         flex: 1;
         height: 100%; }
         .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul {
-          -ms-flex-item-align: start;
           align-self: flex-start;
           line-height: 2; }
           .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li {
             width: 100%;
-            -webkit-transition: all 0.3s ease-in;
             transition: all 0.3s ease-in;
-            margin-left: 0px; }
+            margin-left: 0px;
+            font-weight: bold; }
           .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li:hover {
             text-decoration: underline;
             color: #729ed7;
@@ -355,11 +338,7 @@ a:hover {
           .kontaktformulär .kontaktinfo .anställda_wrapper .anställda ul li i {
             margin-right: 1vw; }
       .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta {
-        -webkit-box-flex: 2;
-        -ms-flex: 2;
         flex: 2;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         width: 100%;
         height: 100%; }
@@ -369,7 +348,6 @@ a:hover {
           opacity: 0;
           background: #fff;
           will-change: opacity;
-          -webkit-transition: all 0.4s ease-in-out;
           transition: all 0.4s ease-in-out; }
           .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .foto {
             max-width: 160px;
@@ -381,68 +359,57 @@ a:hover {
             padding: 20px 10px; }
             .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about h3 {
               font-family: interstatebold;
-              font-size: 1.8rem; }
+              font-size: 1.8em; }
             .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about a {
-              font-size: 0.9rem;
+              font-size: 0.9em;
               color: #004585; }
             .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame .about p {
               margin-top: 3vh; }
         .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame-enter {
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex; }
         .kontaktformulär .kontaktinfo .anställda_wrapper .inforuta .frame-enter-active {
           opacity: 1; }
   .kontaktformulär .inputBox {
     padding: 3vh 3vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     width: 100%; }
     .kontaktformulär .inputBox input[type="text"], .kontaktformulär .inputBox select, .kontaktformulär .inputBox textarea {
       width: 100%;
       padding: 15px;
       border: 1px solid #ccc;
-      font-size: 1rem;
+      font-size: 1em;
       margin: 10px 0; }
     .kontaktformulär .inputBox button {
       background: #004585;
       color: #fff;
       width: 15vw;
       height: 6vh;
-      border-radius: 20px;
-      -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      border-radius: 30px;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-      font-size: 0.8rem;
-      -webkit-transition: all 0.3s;
+      font-size: 0.8em;
       transition: all 0.3s;
-      margin-top: 3vh; }
+      margin-top: 3vh;
+      -webkit-font-smoothing: antialiased; }
     .kontaktformulär .inputBox button:hover {
       cursor: pointer;
-      -webkit-transform: scale(1.15);
       transform: scale(1.15);
-      background: #0056a7; }
+      background: #0056a7;
+      -webkit-font-smoothing: antialiased; }
 
 .footer {
   padding: 5vh 5vw;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  height: 100%;
-  width: 100%; }
+  background: #2a2a2a;
+  color: #fff;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  align-self: flex-end; }
   .footer .kontakt {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
-    -ms-flex-pack: distribute;
     justify-content: space-around; }
     .footer .kontakt div h4 {
       color: #729ed7; }
@@ -455,13 +422,12 @@ a:hover {
 
 /* UTBUD <-----<  */
 .btn {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   height: 50px;
   background: #fff;
   color: #004585;
-  -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
-  padding: 10px; }
+  padding: 10px 20px; }
 
 .btn:hover {
   color: #fff;
@@ -472,161 +438,110 @@ a:hover {
   height: 100%;
   width: 100%;
   padding: 5vh 5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); }
-  .utbud_wrapper .vitvaror_kategori {
+  background: #fff; }
+  .utbud_wrapper .kategori {
     width: 44vw;
     height: 40vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
     justify-content: flex-end;
     background-position: center;
     background-size: cover;
     margin-bottom: 3vh; }
-    .utbud_wrapper .vitvaror_kategori .textbox {
+    .utbud_wrapper .kategori .textbox {
       background: rgba(114, 158, 215, 0.5);
       color: #fff;
       padding: 1vh 1vw;
-      -webkit-transition: all 0.4s ease-in;
       transition: all 0.4s ease-in;
       height: 20%; }
-      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container {
+      .utbud_wrapper .kategori .textbox .textbox_container {
         display: none;
         opacity: 0;
-        -webkit-transition: all 0.4s ease-in;
         transition: all 0.4s ease-in;
         will-change: opacity;
-        font-size: 0.8rem; }
-      .utbud_wrapper .vitvaror_kategori .textbox .fa-arrow-circle-up {
-        -webkit-transition: all 0.4s ease-in;
+        font-size: 14px; }
+        .utbud_wrapper .kategori .textbox .textbox_container div i {
+          margin-left: 10px; }
+      .utbud_wrapper .kategori .textbox .fa-arrow-circle-up {
         transition: all 0.4s ease-in;
         float: right; }
-      .utbud_wrapper .vitvaror_kategori .textbox h2 {
+      .utbud_wrapper .kategori .textbox h2 {
         font-family: interstatebold;
-        font-size: 1.5rem;
-        -webkit-transition: all 0.4s ease-in;
+        font-size: 1.5em;
         transition: all 0.4s ease-in; }
-      .utbud_wrapper .vitvaror_kategori .textbox h3 {
+      .utbud_wrapper .kategori .textbox h3 {
         font-family: interstatebold;
-        font-size: 1rem;
-        -webkit-transition: all 0.4s ease-in;
+        font-size: 1em;
         transition: all 0.4s ease-in; }
-      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container a {
-        color: #004585;
+      .utbud_wrapper .kategori .textbox .textbox_container a {
+        color: #0056a7;
         font-weight: bold; }
-      .utbud_wrapper .vitvaror_kategori .textbox .textbox_container a:hover {
+      .utbud_wrapper .kategori .textbox .textbox_container a:hover {
         color: #fff; }
-      .utbud_wrapper .vitvaror_kategori .textbox .element-display {
+      .utbud_wrapper .kategori .textbox .element-display {
         display: block; }
-      .utbud_wrapper .vitvaror_kategori .textbox .element-display-active {
+      .utbud_wrapper .kategori .textbox .element-display-active {
         opacity: 1;
         padding-top: 10px; }
-    .utbud_wrapper .vitvaror_kategori .hover-enter {
-      height: 60%; }
-      .utbud_wrapper .vitvaror_kategori .hover-enter h2 {
-        font-size: 2rem; }
-      .utbud_wrapper .vitvaror_kategori .hover-enter h3 {
-        font-size: 1.5rem; }
-      .utbud_wrapper .vitvaror_kategori .hover-enter .fa-arrow-circle-up {
+    .utbud_wrapper .kategori .hover-enter {
+      height: 70%; }
+      .utbud_wrapper .kategori .hover-enter h2 {
+        font-size: 2em; }
+      .utbud_wrapper .kategori .hover-enter h3 {
+        font-size: 1.5em; }
+      .utbud_wrapper .kategori .hover-enter .fa-arrow-circle-up {
         font-size: 2rem;
-        -webkit-transform: rotate(-180deg);
         transform: rotate(-180deg); }
-    .utbud_wrapper .vitvaror_kategori .hover-active {
+    .utbud_wrapper .kategori .hover-active {
       background: rgba(114, 158, 215, 0.7); }
   .utbud_wrapper .hushållsapparater {
     background-image: url("../img/espresso.jpeg");
-    margin-bottom: 5vh;
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
     order: 3;
     height: 30vh; }
     .utbud_wrapper .hushållsapparater .textbox_container ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
       align-items: center;
-      font-size: 1.2rem;
-      height: 100%; }
+      justify-content: center;
+      font-size: 1.5em;
+      width: 100%; }
       .utbud_wrapper .hushållsapparater .textbox_container ul li {
-        padding: 5px 5px; }
+        margin: 5px 10px; }
   .utbud_wrapper .kök {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2;
     background-image: url("../img/kök.jpg"); }
     .utbud_wrapper .kök .textbox_container {
       width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -ms-flex-direction: column;
       flex-direction: column;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       .utbud_wrapper .kök .textbox_container div {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: distribute;
         justify-content: space-around;
+        align-items: center;
         padding: 10px;
         width: 100%; }
   .utbud_wrapper .värme {
     height: 30vh;
     background-image: url("../img/fire.jpg");
     background-position: bottom;
-    -webkit-box-ordinal-group: 5;
-    -ms-flex-order: 4;
     order: 4; }
     .utbud_wrapper .värme .textbox_container div {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
       justify-content: space-around;
+      align-items: center;
       width: 100%;
-      padding: 4px; }
-      .utbud_wrapper .värme .textbox_container div .btn {
-        font-size: 1.1rem;
-        height: 35px;
-        padding: 5px 10px; }
+      padding: 30px 0; }
   .utbud_wrapper .vitvaror {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
     background-image: url("../img/ugn_disk.jpeg"); }
     .utbud_wrapper .vitvaror .list_container {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: distribute;
       justify-content: space-around; }
       .utbud_wrapper .vitvaror .list_container ul {
         padding-right: 5px; }
@@ -636,20 +551,11 @@ a:hover {
   height: 100%;
   width: 100%;
   padding: 3vh 3vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   background: #fff; }
   .om_oss_wrap .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
     width: 65%;
@@ -657,29 +563,22 @@ a:hover {
     .om_oss_wrap .container .box {
       height: 100%;
       width: 100%;
-      padding: 3vh 6vw; }
+      padding: 3vh 6vw;
+      line-height: 1.5; }
       .om_oss_wrap .container .box h1, .om_oss_wrap .container .box h2 {
         color: #004585; }
   .om_oss_wrap .carousel {
     height: 100%;
-    width: 300px;
+    width: 252px;
     background: #fff; }
-    .om_oss_wrap .carousel div {
-      margin-right: 15px; }
-      .om_oss_wrap .carousel div img {
-        max-width: 250px;
-        height: 350px; }
+    .om_oss_wrap .carousel div img {
+      height: 350px; }
 
 /* HITTA HIT <-------< */
 .hitta_hit_wrap {
   padding: 3vh 3vw 10vh 3vw;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   line-height: 1.5;
   background: #F7F7F7; }
@@ -691,3 +590,5 @@ a:hover {
   .hitta_hit_wrap .iframe_wrapper iframe {
     height: 60vh;
     width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
