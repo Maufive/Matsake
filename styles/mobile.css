@@ -49,12 +49,12 @@
       .utbud .card h1 {
         font-size: 1.5rem; }
 
-  .kontaktformulär {
+  .kontakt_wrapper {
     flex-direction: column;
     height: 100%; }
-    .kontaktformulär .kontaktinfo .anställda_wrapper {
+    .kontakt_wrapper .kontaktinfo .carousel-container {
       display: none; }
-    .kontaktformulär .inputBox button {
+    .kontakt_wrapper .inputBox button {
       width: 90%; } }
 @media only screen and (max-width: 768px) {
   .container {
@@ -253,8 +253,6 @@
     .om_oss_wrap .box {
       width: 100%;
       padding: 0; }
-    .om_oss_wrap .carousel {
-      display: none; }
 
   .media_wrap {
     padding: 5vh 0;

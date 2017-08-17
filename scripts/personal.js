@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.carousel').slick({
+  $('.anställda-carousel').slick({
     dots: true,
     infinite: true,
     autoplaySpeed: 3000,

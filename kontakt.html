@@ -9,6 +9,8 @@
   <title>Kontakta oss på Mats-Åke på Teg</title>
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/slick.css" />
+  <link rel="stylesheet" href="styles/slick-theme.css" />
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="styles/fonts/font-awesome/css/font-awesome.min.css">
 </head>
@@ -27,7 +29,6 @@
         <div class="dropdown">
           <span class="arrow"></span>
           <ul>
-            <!-- <li><a href="index.html"><i class="fa fa-home" style="margin-right: 5px"></i>Hem</a></li> -->
             <li><a href="utbud.html">Utbud</a></li>
             <li><a href="om_oss.html">Om oss</a></li>
             <li><a href="hitta_hit.html">Hitta hit</a></li>
@@ -53,7 +54,7 @@
 </div>
 
 
-<div class="kontaktformulär">
+<div class="kontakt_wrapper">
   <div class="kontaktinfo">
     <h1>Kontakta Oss</h1>
     <br />
@@ -69,7 +70,83 @@
       Vi försöker återkoppla till dig inom ett dygn på arbetsveckor.
     </p>
 
-    <div class="anställda_wrapper">
+    <div class="carousel-container">
+      <div class="anställda-carousel">
+
+        <div class="employee">
+          <img src="img/lena.jpeg" />
+          <div>
+            <h3><i class="fa fa-user"></i> Lena Adolphsson</h3>
+            <h3><i class="fa fa-info-circle"></i> Ägare</h3>
+            <h3><i class="fa fa-phone"></i> 090-34 88 384</h3>
+            <h3><i class="fa fa-envelope"></i> lena.adolphson@elon.se</h3>
+          </div>
+        </div>
+
+        <div class="employee">
+          <img src="img/mona.jpeg" />
+          <div>
+            <h3><i class="fa fa-user"></i> Mona Johandahl</h3>
+            <h3><i class="fa fa-info-circle"></i> Ägare</h3>
+            <h3><i class="fa fa-phone"></i> 090-34 88 385</h3>
+            <h3><i class="fa fa-envelope"></i> mona.johandahl@elon.se</h3>
+          </div>
+        </div>
+
+        <div class="employee">
+          <img src="img/lars.jpeg" />
+          <div>
+            <h3><i class="fa fa-user"></i> Lars Norrman</h3>
+            <h3><i class="fa fa-info-circle"></i> Säljare</h3>
+            <h3><i class="fa fa-phone"></i> 090-34 88 380</h3>
+            <h3><i class="fa fa-envelope"></i> lars.norrman@elon.se</h3>
+          </div>
+        </div>
+
+        <div class="employee">
+          <img src="img/markus.jpeg" />
+          <div>
+            <h3><i class="fa fa-user"></i> Markus Nygren</h3>
+            <h3><i class="fa fa-info-circle"></i> Säljare</h3>
+            <h3><i class="fa fa-phone"></i> 090-34 88 383</h3>
+            <h3><i class="fa fa-envelope"></i> markus.nygren@elon.se</h3>
+          </div>
+        </div>
+
+        <div class="employee">
+          <img src="img/nina.jpeg" />
+          <div>
+            <h3><i class="fa fa-user"></i> Nina Oskarsson</h3>
+            <h3><i class="fa fa-info-circle"></i> Säljare</h3>
+            <h3><i class="fa fa-phone"></i> 090-12 44 82</h3>
+            <h3><i class="fa fa-envelope"></i> umea@elon.se</h3>
+          </div>
+        </div>
+
+        <div class="employee">
+          <img src="img/marcus.jpeg" />
+          <div>
+            <h3><i class="fa fa-user"></i> Marcus Berggren</h3>
+            <h3><i class="fa fa-info-circle"></i> Säljare</h3>
+            <h3><i class="fa fa-phone"></i> 090-12 44 82</h3>
+            <h3><i class="fa fa-envelope"></i> marcus.berggren@elon.se</h3>
+          </div>
+        </div>
+
+        <div class="employee">
+          <img src="img/nils.jpeg" />
+          <div>
+            <h3><i class="fa fa-user"></i> Nils Jakobsson</h3>
+            <h3><i class="fa fa-info-circle"></i> Installatör</h3>
+            <h3><i class="fa fa-phone"></i> 090-12 44 82</h3>
+            <h3><i class="fa fa-envelope"></i> umea@elon.se</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- <div class="anställda_wrapper">
       <div class="anställda">
         <ul>
           <li class="employee" name="mona"><i class="fa fa-address-card-o"></i>Mona Johandahl</li>
@@ -86,7 +163,8 @@
         <div class="frame">
         </div>
       </div>
-    </div>
+    </div> -->
+
   </div>
 
   <div class="inputBox">
@@ -124,7 +202,6 @@
 </div>
 
 
-
 <div class="footer">
   <div class="kontakt">
     <div class="epost-osv">
@@ -156,6 +233,9 @@
   </div>
 </div>
 
+<script src="scripts/jquery-3.2.1.min.js"></script>
 <script src="scripts/script.js"></script>
+<script src="scripts/slick.js"></script>
+<script src="scripts/personal.js"></script>
 </body>
 </html>

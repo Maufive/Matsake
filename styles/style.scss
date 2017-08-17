@@ -356,18 +356,16 @@ a:hover { color: $ltblue; }
   }
 }
 
-.kontaktformulär {
-  width: 100%;
-  height: 100%;
-  background: white;
-  color: $darkblue;
+.kontakt_wrapper {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  background: white;
+  color: $darkblue;
 
   .kontaktinfo {
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 3vh 3vw;
 
     .snabb_info {
@@ -380,72 +378,97 @@ a:hover { color: $ltblue; }
       margin-bottom: 3vh;
     }
 
-
-    .anställda_wrapper {
+    .carousel-container {
       display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      height: 250px;
+      justify-content: center;
       margin-top: 3vh;
-
-      .anställda {
+      .anställda-carousel {
         display: flex;
-        flex: 1;
-        height: 100%;
-        ul {
-          align-self: flex-start;
-          line-height: 2;
-          li {
-            width: 100%;
-            transition: all 0.3s ease-in;
-            margin-left: 0px;
-            font-weight: bold;
+        justify-content: center;
+        width: 40vw;
+        height: 30vh;
+        .employee {
+          display: flex;
+          width: 40vw;
+          img {
+            width: 150px;
+            height: 200px;
           }
-          li:hover{
-            text-decoration: underline;
-            color: $ltblue;
-            cursor: pointer;
-            margin-left: 5px;
-          }
-          li i {
-            margin-right: 1vw;
+          div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 2vw;
           }
         }
-      }
-
-      .inforuta {
-        flex: 2;
-        display: flex;
-        width: 100%;
-        height: 100%;
-
-        .frame {
-          width: 100%;
-          display: none;
-          opacity: 0;
-          background: #fff;
-          will-change: opacity;
-          transition: all 0.4s ease-in-out;
-
-          .foto {
-            max-width: 160px;
-            max-height: 250px;
-          }
-          .about {
-            width: 100%;
-            background: #fff;
-            color: $darkblue;
-            padding: 20px 10px;
-            h3 { font-family: interstatebold; font-size: 1.8em; }
-            a { font-size: 0.9em; color: $darkblue; }
-            p { margin-top: 3vh; }
-          }
-        }
-        .frame-enter  { display: flex; }
-        .frame-enter-active  { opacity: 1; }
       }
     }
+
+    // .anställda_wrapper {
+    //   display: flex;
+    //   justify-content: space-around;
+    //   align-items: center;
+    //   width: 100%;
+    //   height: 250px;
+    //   margin-top: 3vh;
+    //
+    //   .anställda {
+    //     display: flex;
+    //     flex: 1;
+    //     height: 100%;
+    //     ul {
+    //       align-self: flex-start;
+    //       line-height: 2;
+    //       li {
+    //         width: 100%;
+    //         transition: all 0.3s ease-in;
+    //         margin-left: 0px;
+    //         font-weight: bold;
+    //       }
+    //       li:hover{
+    //         text-decoration: underline;
+    //         color: $ltblue;
+    //         cursor: pointer;
+    //         margin-left: 5px;
+    //       }
+    //       li i {
+    //         margin-right: 1vw;
+    //       }
+    //     }
+    //   }
+    //
+    //   .inforuta {
+    //     flex: 2;
+    //     display: flex;
+    //     width: 100%;
+    //     height: 100%;
+    //
+    //     .frame {
+    //       width: 100%;
+    //       display: none;
+    //       opacity: 0;
+    //       background: #fff;
+    //       will-change: opacity;
+    //       transition: all 0.4s ease-in-out;
+    //
+    //       .foto {
+    //         max-width: 160px;
+    //         max-height: 250px;
+    //       }
+    //       .about {
+    //         width: 100%;
+    //         background: #fff;
+    //         color: $darkblue;
+    //         padding: 20px 10px;
+    //         h3 { font-family: interstatebold; font-size: 1.8em; }
+    //         a { font-size: 0.9em; color: $darkblue; }
+    //         p { margin-top: 3vh; }
+    //       }
+    //     }
+    //     .frame-enter  { display: flex; }
+    //     .frame-enter-active  { opacity: 1; }
+    //   }
+    // }
   }
 
   .inputBox {
@@ -453,6 +476,7 @@ a:hover { color: $ltblue; }
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 
     input[type="text"], select, textarea {
       width: 100%;
@@ -665,16 +689,6 @@ a:hover { color: $ltblue; }
     }
   }
 
-  .carousel {
-    height: 100%;
-    width: 252px;
-    background: #fff;
-    div {
-      img {
-        height: 350px;
-      }
-    }
-  }
 }
 
 /* HITTA HIT <-------< */
