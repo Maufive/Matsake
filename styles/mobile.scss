@@ -103,8 +103,8 @@
         border-radius: 10px;
         position: relative;
         .dropdown {
-          height: 35vh;
-          width: 40vw;
+          height: 45vh;
+          width: 45vw;
           right: 0%;
           top: 150%;
           background: #fff;
@@ -121,19 +121,19 @@
             display: inline-flex;
             flex-direction: column;
             justify-content: space-around;
+
             width: 100%;
             height: 100%;
-            padding: 10px;
-            text-align: center;
 
-            li { font-size: 1.6rem; }
+            li { font-size: 1.8rem; padding: 5px 10px; }
+            .active-menu { padding: 5px 20px; background: #f7f7f7; }
           }
 
           ul li a { color: #729ed7; }
 
           .arrow {
             position: absolute;
-            right: 7%;
+            right: 10%;
             width: 25px;
             height: 25px;
             display: block;
@@ -154,8 +154,9 @@
 
     .om_oss {
       padding: 5vh 5vw;
+      text-align: left;
       .intro {
-        h1 { font-size: 4rem; font-family: interstatebold; }
+        h1 { font-size: 4rem; text-align: center; line-height: normal; margin-bottom: 3vh; }
       }
     }
 
@@ -203,6 +204,7 @@
       margin-bottom: 3vh;
       div {
         width: 100%;
+        height: auto;
         padding: 20px 10px;
       }
     }
@@ -210,21 +212,21 @@
 
   .personal-container {
     align-items: flex-start;
-    h2 { padding-left: 3vw; }
+    h2 { padding-left: 4vw; }
 
     .personal-grid {
-      justify-content: space-around;
       padding: 0;
       .anställd {
-        width: 35%;
-        margin: 3vh;
+        width: 40%;
+        margin: 3vh 4vw;
+        // flex: 0;
       }
     }
   }
 
   .bg-container {
     padding: 0;
-    height: 112vh;
+    height: 100%;
     .kontakt-container {
       width: 100%;
       .kontakt-wrap {
@@ -292,13 +294,13 @@
         }
       }
       .hover-enter {
-        height: 40%;
+        height: 50%;
         h3 { font-size: 2rem; }
       }
     }
     .hushållsapparater { background-image: url("../img/espresso_liten.png"); }
 
-    .värme {
+    .värme, .kök {
       .textbox .textbox_container div {
         justify-content: space-between;
         flex-wrap: wrap;

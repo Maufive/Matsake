@@ -264,11 +264,10 @@ a:hover { color: $ltblue; }
 
 .personal-container {
   height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 3vh 0;
   align-items: center;
+  padding: 3vh 0;
   color: $darkblue;
   h2 { font-size: 2em; }
 
@@ -276,7 +275,6 @@ a:hover { color: $ltblue; }
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100%;
     padding: 3vh 6vw;
 
     .anställd {
@@ -292,7 +290,7 @@ a:hover { color: $ltblue; }
 
 .bg-container {
   background: #f7f7f7;
-  height: 75vh;
+  height: 100%;
   width: 100%;
   padding: 0vh 0;
 
@@ -370,7 +368,6 @@ a:hover { color: $ltblue; }
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
     padding: 3vh 3vw;
 
     .snabb_info {
@@ -456,7 +453,6 @@ a:hover { color: $ltblue; }
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
 
     input[type="text"], select, textarea {
       width: 100%;
