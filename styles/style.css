@@ -500,9 +500,11 @@ a:hover {
     background-image: url("../img/ugn_disk.jpeg"); }
     .utbud_wrapper .vitvaror .list_container {
       display: flex;
-      justify-content: space-around; }
+      justify-content: center; }
       .utbud_wrapper .vitvaror .list_container ul {
-        padding-right: 5px; }
+        flex: 1;
+        padding-right: 5px;
+        line-height: 1.5; }
 
 /* OM OSS <--------< */
 .om_oss_wrap {
