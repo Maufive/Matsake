@@ -131,6 +131,9 @@
       text-align: center;
       line-height: normal;
       margin-bottom: 3vh; }
+    .om_oss .intro h2, .om_oss .intro p {
+      text-align: center;
+      line-height: 1.3; }
 
   .en_rad_med_ikoner {
     display: none; }
