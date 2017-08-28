@@ -121,7 +121,7 @@
       <h1>Creoformkök</h1>
       <br />
       <p>
-        Köksinredning för ett härligt nytt kök hittar du hos Mats-Åke på Teg. Klicka <a href="http://creoform.se/Default.aspx"><u>här</u></a> för att läsa mer om Creoform-kök.
+        Köksinredning för ett härligt nytt kök hittar du hos Mats-Åke på Teg. <a href="http://creoform.se/Default.aspx"><u>Klicka här</u></a> för att läsa mer om Creoform-kök.
       </p>
     </div>
   </div>
@@ -130,7 +130,7 @@
       <h1>Vitvaror</h1>
       <br />
       <p>
-        Hos oss hittar du vitvaror från b.la Electrolux, Bosch & Samsung. Klicka <a href="utbud.html"><u>här</u></a> för att se mer av vårat utbud av vitvaror.
+        Hos oss hittar du vitvaror från b.la Electrolux, Bosch & Samsung. <a href="utbud.html"><u>Klicka här</u></a> för att se mer av vårat utbud av vitvaror.
       </p>
     </div>
   </div>
@@ -204,44 +204,39 @@
         <i class="fa fa-phone"></i> 090-12 44 82
         <br>
         <i class="fa fa-envelope"></i> elon@umea.se
-
-
       </div>
 
-      <div class="kontakt-form">
-        <div class="inputBox">
-          <input type="text" id="name" name="firstname" placeholder="Ditt namn.." />
+        <form class="kontakt-form" method="POST" action="./scripts/mail.php">
+          <div class="inputBox">
+            <input type="text" id="namn" name="namn" value="" placeholder="Ditt namn.." />
+            <input type="text" id="email" name="email" value="" placeholder="Din E-postadress.." />
+            <input type="text" id="telefon" name="telefon" value="" placeholder="Ditt telefonnummer.." />
 
-          <input type="text" id="email" name="email" placeholder="Din E-postadress.." />
+            <select class="ämne" name="ämne">
+              <option value="Ämne">Välj ämne</option>
+              <option value="Offert">Offert / Prisuträkning</option>
+              <option value="Kök/Vitvaror">Kök / Vitvaror</option>
+              <option value="Värmepumpar">Värmepumpar</option>
+              <option value="Spis/Ugn">Spis / Ugn</option>
+              <option value="Tvätt/Tork">Tvätt / Tork</option>
+            </select>
 
-          <input type="text" id="telefon" name="telefon" placeholder="Ditt telefonnummer.." />
+            <select class="säljare" name="säljare">
+              <option value="säljare">Välj säljare</option>
+              <option value="Mona">Mona Johandahl   (Ägare)</option>
+              <option value="Lena">Lena Adolphson   (Ägare)</option>
+              <option value="Lars">Lars Norrman     (Säljare)</option>
+              <option value="Markus">Markus Nygren  (Säljare)</option>
+              <option value="Nina">Nina Oskarsson   (Säljare)</option>
+              <option value="Marcus">Marcus Bergström   (Säljare)</option>
+              <option value="Nils">Nils Jakobsson   (Installatör)</option>
+            </select>
+            <textarea rows="4" id="textInput" name="meddelande" placeholder="Skriv ditt ärende här.."></textarea>
 
-          <select class="ämne" name="ämne">
-            <option value="ämne">Välj ämne</option>
-            <option value="offert">Offert / Prisuträkning</option>
-            <option value="kök_vitvaror">Kök / Vitvaror</option>
-            <option value="värmepumpar">Värmepumpar</option>
-            <option value="spisar">Spis / Ugn</option>
-            <option value="tork">Tvätt / Tork</option>
-          </select>
+            <input id="sendMail" class="skickaMail" type="submit" name="submit"></input>
 
-          <select class="säljare" name="säljare">
-            <option value="säljare">Välj säljare</option>
-            <option value="mona">Mona Johandahl   (Ägare)</option>
-            <option value="lena">Lena Adolphson   (Ägare)</option>
-            <option value="lars">Lars Norrman     (Säljare)</option>
-            <option value="markus">Markus Nygren  (Säljare)</option>
-            <option value="nina">Nina Oskarsson   (Säljare)</option>
-            <option value="marcus">Marcus Bergström   (Säljare)</option>
-            <option value="nils">Nils Jakobsson   (Installatör)</option>
-          </select>
-
-          <textarea rows="4" id="textInput" name="textInput" placeholder="Skriv ditt ärende här.."></textarea>
-
-          <button class="skickaMail" onclick="sendMail()"><i class="fa fa-envelope"></i> Skicka</button>
-
-        </div>
-      </div>
+          </div>
+        </form>
 
     </div>
   </div>
@@ -255,6 +250,7 @@
         <li><a href="https://www.google.se/maps/place/Domarev%C3%A4gen+28B,+904+33+Ume%C3%A5/@63.8190132,20.238493,17z/data=!3m1!4b1!4m5!3m4!1s0x467c5b9e49ee493f:0x955977a07d81860!8m2!3d63.8190132!4d20.2406817"><i class="fa fa-map-marker"></i> Domarevägen 28 B,<br /> 904 33 Umeå</a></li>
         <li><i class="fa fa-envelope"></i> umea@elon.se</li>
         <li><i class="fa fa-phone"></i> 090-12 44 82</li>
+          <a href="https://www.facebook.com/ELON-Mats%C3%85ke-p%C3%A5-Teg-418746171519744/"><li><i class="fa fa-facebook-official"></i> Facebook</li></a>
       </ul>
     </div>
     <div class="länkar">
@@ -278,6 +274,7 @@
   </div>
 </div>
 
+<script src="scripts/jquery-3.2.1.min.js"></script>
 <script src="scripts/script.js"></script>
 </body>
 </html>

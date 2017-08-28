@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="styles/mobile.css">
   <link rel="icon" href="img/favicon.png">
   <link rel="stylesheet" href="styles/fonts/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/slick.css">
+  <link rel="stylesheet" href="styles/slick-theme.css">
 </head>
 <body>
 <div class="header_wrapper">
@@ -56,11 +58,29 @@
     <h1>Mats-Åke på YouTube</h1>
     <p>
       <i class="fa fa-info-circle"></i>
-      Här hittar du material känt från TV och radio, direkt inbäddat från våran <a href="#" class="youtube_link">YouTube-kanal</a>.
+      Här hittar du material känt från TV och radio, direkt inbäddat från våran <a href="https://www.youtube.com/channel/UCPxp6mLwBbngLERN7xZOw0g" class="youtube_link">YouTube-kanal</a>.
     </p>
+
     <div class="player_container">
       <div id="player"></div>
     </div>
+
+    <div class="videos-carousel">
+
+      <div class="video" onclick="changeVideo('QOQ-yw1BdAA')">
+        <div></div>
+      </div>
+      <div class="video" onclick="changeVideo('QOQ-yw1BdAA')">
+        <div></div>
+      </div>
+      <div class="video" onclick="changeVideo('QOQ-yw1BdAA')"></div>
+      <div class="video" onclick="changeVideo('QOQ-yw1BdAA')"></div>
+      <div class="video" onclick="changeVideo('o7cCJqya7wc')"></div>
+      <div class="video" onclick="changeVideo('QOQ-yw1BdAA')"></div>
+      <div class="video" onclick="changeVideo('QOQ-yw1BdAA')"></div>
+
+    </div>
+
   </div>
 
 </div>
@@ -74,6 +94,7 @@
         <li><a href="https://www.google.se/maps/place/Domarev%C3%A4gen+28B,+904+33+Ume%C3%A5/@63.8190132,20.238493,17z/data=!3m1!4b1!4m5!3m4!1s0x467c5b9e49ee493f:0x955977a07d81860!8m2!3d63.8190132!4d20.2406817"><i class="fa fa-map-marker"></i> Domarevägen 28 B,<br /> 904 33 Umeå</a></li>
         <li><i class="fa fa-envelope"></i> umea@elon.se</li>
         <li><i class="fa fa-phone"></i> 090-12 44 82</li>
+        <a href="https://www.facebook.com/ELON-Mats%C3%85ke-p%C3%A5-Teg-418746171519744/"><li><i class="fa fa-facebook-official"></i> Facebook</li></a>
       </ul>
     </div>
     <div class="länkar">
@@ -96,7 +117,9 @@
     </div>
   </div>
 </div>
-
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/slick.js"></script>
+<script src="scripts/videos.js"></script>
 <script src="scripts/script.js"></script>
 <script src="scripts/player.js"></script>
 </body>

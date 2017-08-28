@@ -41,7 +41,7 @@ a:hover {
   color: #fff; }
 
 .header_wrapper {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6); }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4); }
 
 .header {
   padding: 3vh 3vw;
@@ -86,12 +86,12 @@ a:hover {
           margin-bottom: 10px; }
 
 .jumbotron {
-  width: 100vw;
   height: 60vh;
-  background: url("../img/elon_butik.jpg");
+  background: url("../img/123.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -258,42 +258,23 @@ a:hover {
         text-align: left;
         font-size: 1.1rem; }
       .bg-container .kontakt-container .kontakt-wrap .kontakt-form {
-        width: 40%;
         flex: 1; }
-        .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox {
-          width: 100%; }
-          .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox input[type="text"], .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox select, .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ccc;
-            font-size: 0.8em;
-            margin: 5px 0; }
-          .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox button {
-            background: #fff;
-            color: #000;
-            width: 15vw;
-            height: 6vh;
-            border-radius: 30px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-            font-size: 0.8em;
-            transition: all 0.3s;
-            margin-top: 3vh;
-            -webkit-font-smoothing: antialiased; }
-          .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox button:hover {
-            cursor: pointer;
-            transform: scale(1.15);
-            -webkit-font-smoothing: antialiased; }
+        .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox input[type="text"], .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox select, .bg-container .kontakt-container .kontakt-wrap .kontakt-form .inputBox textarea {
+          width: 100%;
+          padding: 15px;
+          border: 1px solid #ccc;
+          font-size: 0.8em;
+          margin: 5px 0; }
 
 .kontakt_wrapper {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
   background: white;
   color: #004585; }
   .kontakt_wrapper .kontaktinfo {
     display: flex;
     flex-direction: column;
-    padding: 3vh 3vw; }
+    padding: 3vh 3vw;
+    flex: 1; }
     .kontakt_wrapper .kontaktinfo .snabb_info {
       background: #f7f7f7;
       padding: 20px 5px;
@@ -324,34 +305,37 @@ a:hover {
             flex-direction: column;
             justify-content: center;
             margin-left: 2vw; }
-  .kontakt_wrapper .inputBox {
-    padding: 3vh 3vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; }
-    .kontakt_wrapper .inputBox input[type="text"], .kontakt_wrapper .inputBox select, .kontakt_wrapper .inputBox textarea {
-      width: 100%;
-      padding: 15px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-      margin: 10px 0; }
-    .kontakt_wrapper .inputBox button {
-      background: #004585;
-      color: #fff;
-      width: 15vw;
-      height: 6vh;
-      border-radius: 30px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-      font-size: 0.8em;
-      transition: all 0.3s;
-      margin-top: 3vh;
-      -webkit-font-smoothing: antialiased; }
-    .kontakt_wrapper .inputBox button:hover {
-      cursor: pointer;
-      transform: scale(1.15);
-      background: #0056a7;
-      -webkit-font-smoothing: antialiased; }
+  .kontakt_wrapper .kontakt-form {
+    flex: 1; }
+    .kontakt_wrapper .kontakt-form .inputBox {
+      padding: 3vh 3vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 1; }
+      .kontakt_wrapper .kontakt-form .inputBox input[type="text"], .kontakt_wrapper .kontakt-form .inputBox select, .kontakt_wrapper .kontakt-form .inputBox textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #ccc;
+        font-size: 1em;
+        margin: 10px 0; }
+
+#sendMail {
+  background: #fff;
+  color: #000;
+  width: 15vw;
+  height: 6vh;
+  border-radius: 30px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  font-size: 0.8em;
+  transition: all 0.3s;
+  margin-top: 3vh;
+  -webkit-font-smoothing: antialiased; }
+
+#sendMail:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+  -webkit-font-smoothing: antialiased; }
 
 .footer {
   padding: 5vh 5vw;
@@ -555,5 +539,17 @@ a:hover {
   width: 100%;
   height: 100%;
   margin-top: 3vh; }
+
+.videos-carousel {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: #fff; }
+  .videos-carousel .video {
+    height: 100px;
+    margin: 0 10px;
+    background: url("../img/logotype.png");
+    background-position: center;
+    background-size: contain; }
 
 /*# sourceMappingURL=style.css.map */
